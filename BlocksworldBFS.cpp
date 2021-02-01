@@ -1,5 +1,5 @@
 #include <iostream>
-#include <ifstream>
+#include <fstream>
 #include "State.h"
 
 using namespace std;
@@ -7,6 +7,11 @@ using namespace std;
 
 State readInput(string fileName)
 {
+    ifstream file;
+    file.open(fileName);
+    if(!file.is_open())
+        cout << "Error opening file" << endl;
+
     
 
 }
