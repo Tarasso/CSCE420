@@ -65,11 +65,28 @@ vector<State*> State::successors()
             for(int i = 0; i < bw.size(); i++)
             {
                 if(i == oldRow)
-                    newBw.push_back(bw[i].substr(0,bw.size()-1));
+                {
+                    cout << "old row " << endl;
+                    if(bw[i].size() == 1)
+                    {
+                        newBw.push_back("");
+                    }
+                    else
+                        newBw.push_back(bw[i].substr(0,bw[i].size()-1));
+                }
+                    
                 else if (i == newRow)
+                {
+                    cout << "new row " << endl;
                     newBw.push_back(bw[i]+bw[oldRow][bw[oldRow].size()-1]);
+                }
+                    
                 else
+                {
+                    cout << "else " << endl;
                     newBw.push_back(bw[i]);
+                }
+                    
             }
             
             for(int i = 0; i < newBw.size(); i++)
