@@ -36,10 +36,16 @@ string State::hash()
     string ret = "";
     for(int i = 0; i < bw.size(); i++)
     {
-        ret += bw[i];
+        ret.append(bw.at(i));
+        //cout << "adding " << bw[i] << endl;
         if(i != bw.size()-1)
-            ret += ";";
+        {
+            ret.append(";");
+        }
+        //cout << ret << endl;
+            
     }
+    //cout << "ret: " << ret << endl;
     return ret;
 }
 

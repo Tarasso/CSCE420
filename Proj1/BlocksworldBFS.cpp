@@ -48,6 +48,11 @@ pair< vector<string>,vector<string> > readInput(string fileName)
         goalStateVec.push_back(line);
     }
 
+    // for(int i = 0; i < goalStateVec.size(); i++)
+    // {
+    //     cout << goalStateVec[i] << endl;
+    // }
+
     return make_pair(startStateVec,goalStateVec);
 }
 
@@ -58,26 +63,40 @@ int main(int argc, char *argv[])
         cout << "Invalid arguments given" << endl;
 
     pair< vector<string>,vector<string> > vecPair = readInput(argv[1]);
-    State startState = vecPair.first;
-    State goalState = vecPair.second;
 
-    cout << "Start:" << startState.hash() << endl;
-    cout << "Goal:" << goalState.hash() << endl;
+    State* startState = new State(vecPair.first);
+    State* goalState = new State(vecPair.second);
 
-    cout << startState.match(&goalState) << endl;
-    cout << startState.match(&startState) << endl;
+    cout << "hello" << endl;
+
+    for(int i = 0; i < startState->bw.size(); i++)
+    {
+        cout << startState->bw[i] << endl;
+    }
+
+
 
     cout << "Start:" << endl;
-    startState.print();
-    cout << "---" << endl;
-    cout << "Goal:" << endl;
-    goalState.print();
-    cout << "---" << endl;
+    startState->print();
+    cout << startState->match(startState) << endl;
+    cout << goalState->match(startState) << endl;
+    cout << "anything" << endl;
+    cout << "Hash: " << startState->hash() << endl;
+    cout << "anything2" << endl;
 
-    vector<State*> succs = startState.successors();
-    for(int i = 0; i < succs.size(); i++)
-    {
-        cout << "State " << i << endl;
-        succs[i]->print();
-    }
+    // cout << "Goal:" << goalState.hash() << endl;
+
+    // cout << "Start:" << endl;
+    // startState.print();
+    // cout << "---" << endl;
+    // cout << "Goal:" << endl;
+    // goalState.print();
+    // cout << "---" << endl;
+
+    // vector<State*> succs = startState.successors();
+    // for(int i = 0; i < succs.size(); i++)
+    // {
+    //     cout << "State " << i << endl;
+    //     succs[i]->print();
+    // }
 }
