@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <queue>
+#include <unordered_map>
 #include "State.h"
 #include "Node.h"
 
@@ -57,6 +59,53 @@ pair< vector<string>,vector<string> > readInput(string fileName)
     return make_pair(startStateVec,goalStateVec);
 }
 
+Node* BFS(Node* startNode, State* goalState)
+{
+    int iter = 0;
+    int depth = 0;
+    int maxQueueSize = 1;
+    
+    Node* node = startNode;
+
+    if(node->goal_test(goalState))
+        return node;
+    
+    queue<Node*> frontier;
+    frontier.push(node);
+
+    unordered_map<string,bool> reached;
+    reached.insert(make_pair(node->hash(),true));
+
+    while(!frontier.empty())
+    {
+        node = frontier.front();
+        frontier.pop();
+
+        vector<Node*> children = node->successors();
+
+        for(Node* child : children)
+        {
+            iter++;
+
+            if(child->goal_test(goalState))
+            {
+                cout << "success! iter=" << iter << ", depth=" << child->depth << ", max queue size=" << maxQueueSize << endl;
+                return child;
+            }
+            
+            if(reached[child->hash()] == false)
+            {
+                reached[child->hash()] = true;
+                frontier.push(child);
+                if(frontier.size() > maxQueueSize)
+                    maxQueueSize = frontier.size();
+            }
+        }
+    }
+
+    return nullptr;
+}
+
 
 int main(int argc, char *argv[])
 {
@@ -69,14 +118,21 @@ int main(int argc, char *argv[])
     State* goalState = new State(vecPair.second);
 
     Node* root = new Node(startState);
-    root->state->print();
-    vector<Node*> nodes = root->successors();
+
+    Node* goalNode = BFS(root, goalState);
+
+    if(goalState)
+        goalNode->print_path();
+
+
+    //root->state->print();
+    //vector<Node*> nodes = root->successors();
     //cout << "here" << endl;
-    for(int i = 0; i < nodes.size(); i++)
-    {
-        nodes[i]->print_path();
-        cout << endl << endl << endl;
-    }
+    // for(int i = 0; i < nodes.size(); i++)
+    // {
+    //     nodes[i]->print_path();
+    //     cout << endl << endl << endl;
+    // }
 
     // cout << "Start State:" << endl;
     // startState->print();
