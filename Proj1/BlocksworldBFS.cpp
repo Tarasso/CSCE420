@@ -67,36 +67,22 @@ int main(int argc, char *argv[])
     State* startState = new State(vecPair.first);
     State* goalState = new State(vecPair.second);
 
-    cout << "hello" << endl;
+    cout << "Start State:" << endl;
+    startState->print();
+    cout << "<<<<<<<<<<<<" << endl;
 
-    for(int i = 0; i < startState->bw.size(); i++)
+    vector<State*> succs = startState->successors();
+    for(int i = 0; i < succs.size(); i++)
     {
-        cout << startState->bw[i] << endl;
+        cout << "State " << i << ": " << succs[i]->hash() << endl;
     }
 
 
-
-    cout << "Start:" << endl;
-    startState->print();
-    cout << startState->match(startState) << endl;
-    cout << goalState->match(startState) << endl;
-    cout << "anything" << endl;
-    cout << "Hash: " << startState->hash() << endl;
-    cout << "anything2" << endl;
-
-    // cout << "Goal:" << goalState.hash() << endl;
-
-    // cout << "Start:" << endl;
-    // startState.print();
-    // cout << "---" << endl;
-    // cout << "Goal:" << endl;
-    // goalState.print();
-    // cout << "---" << endl;
-
-    // vector<State*> succs = startState.successors();
-    // for(int i = 0; i < succs.size(); i++)
-    // {
-    //     cout << "State " << i << endl;
-    //     succs[i]->print();
-    // }
+    // clearing memory
+    for(int i = 0; i < succs.size(); i++)
+    {
+        delete succs[i];
+    }
+    delete startState;
+    delete goalState;
 }

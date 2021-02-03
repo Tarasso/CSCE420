@@ -9,6 +9,9 @@ State.o: State.cpp State.h
 run:
 	./a.out $(FILE)
 
+valgrind:
+	valgrind ./a.out $(FILE) 
+
 clean:
 	rm *.out
 	rm *.o
