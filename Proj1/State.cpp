@@ -19,6 +19,7 @@ void State::print()
     {
         cout << bw[i] << endl;
     }
+    cout << "<<<<<<<<<<" << endl;
 }
 
 bool State::match(State* other)

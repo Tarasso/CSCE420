@@ -1,10 +1,13 @@
 all: BlocksworldBFS
 
-BlocksworldBFS: BlocksworldBFS.cpp State.o
-	g++ -o a.out -std=c++11 BlocksworldBFS.cpp State.o -g
+BlocksworldBFS: BlocksworldBFS.cpp State.o Node.o
+	g++ -o a.out -std=c++11 BlocksworldBFS.cpp State.o Node.o -g
 
 State.o: State.cpp State.h
 	g++ -c -std=c++11 State.cpp -g
+
+Node.o: Node.cpp Node.h State.h
+	g++ -c -std=c++11 Node.cpp -g
 
 run:
 	./a.out $(FILE)

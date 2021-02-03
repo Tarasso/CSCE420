@@ -2,6 +2,7 @@
 #include <fstream>
 #include <sstream>
 #include "State.h"
+#include "Node.h"
 
 using namespace std;
 
@@ -67,22 +68,32 @@ int main(int argc, char *argv[])
     State* startState = new State(vecPair.first);
     State* goalState = new State(vecPair.second);
 
-    cout << "Start State:" << endl;
-    startState->print();
-    cout << "<<<<<<<<<<<<" << endl;
-
-    vector<State*> succs = startState->successors();
-    for(int i = 0; i < succs.size(); i++)
+    Node* root = new Node(startState);
+    root->state->print();
+    vector<Node*> nodes = root->successors();
+    //cout << "here" << endl;
+    for(int i = 0; i < nodes.size(); i++)
     {
-        cout << "State " << i << ": " << succs[i]->hash() << endl;
+        nodes[i]->print_path();
+        cout << endl << endl << endl;
     }
+
+    // cout << "Start State:" << endl;
+    // startState->print();
+    // cout << "<<<<<<<<<<<<" << endl;
+
+    // vector<State*> succs = startState->successors();
+    // for(int i = 0; i < succs.size(); i++)
+    // {
+    //     cout << "State " << i << ": " << succs[i]->hash() << endl;
+    // }
 
 
     // clearing memory
-    for(int i = 0; i < succs.size(); i++)
-    {
-        delete succs[i];
-    }
+    // for(int i = 0; i < succs.size(); i++)
+    // {
+    //     delete succs[i];
+    // }
     delete startState;
     delete goalState;
 }
