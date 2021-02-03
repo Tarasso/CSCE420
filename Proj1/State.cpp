@@ -5,11 +5,12 @@ using namespace std;
 
 #include "State.h"
 #include <iostream>
+#include <typeinfo>
 
 
 State::State(vector<string> s)
 {
-    bw = s;
+    bw= vector<string>(s);
 }
 
 void State::print() 
@@ -34,16 +35,21 @@ bool State::match(State* other)
 string State::hash()
 {
     string ret = "";
+    //string temp = "";
     for(int i = 0; i < bw.size(); i++)
     {
-        ret.append(bw.at(i));
+        //cout << (typeid(ret) == typeid(bw.at(i))) << endl;
+        //cout << typeid(bw.at(i)) << endl;
+        //ret.append(bw.at(i));
+        //temp = bw.at(i)+';';
         //cout << "adding " << bw[i] << endl;
+        ret += bw[i];
         if(i != bw.size()-1)
         {
-            ret.append(";");
+            ret += ';';
         }
         //cout << ret << endl;
-            
+        //cout << temp << endl;
     }
     //cout << "ret: " << ret << endl;
     return ret;
