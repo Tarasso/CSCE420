@@ -1,0 +1,105 @@
+###################### Test Case 1 ######################
+[kylemrosko]@compute ~/CSCE420/Proj1> (18:27:52 02/03/21)
+:: make run FILE="testcase1.bwp"
+./BlocksworldBFS testcase1.bwp
+success! iter=4, depth=3, max queue size=1
+move 0
+ABC
+
+<<<<<<<<<<
+move 1
+AB
+C
+<<<<<<<<<<
+move 2
+A
+CB
+<<<<<<<<<<
+move 3
+
+CBA
+<<<<<<<<<<
+
+###################### Test Case 2 ######################
+[kylemrosko]@compute ~/CSCE420/Proj1> (18:28:41 02/03/21)
+:: make run FILE="testcase2.bwp"
+./BlocksworldBFS testcase2.bwp
+success! iter=2353, depth=4, max queue size=729
+move 0
+BCF
+
+A
+DE
+<<<<<<<<<<
+move 1
+BCF
+
+AE
+D
+<<<<<<<<<<
+move 2
+BCF
+D
+AE
+
+<<<<<<<<<<
+move 3
+BC
+DF
+AE
+
+<<<<<<<<<<
+move 4
+B
+DFC
+AE
+
+<<<<<<<<<<
+
+###################### Test Case 3 ######################
+[kylemrosko]@compute ~/CSCE420/Proj1> (18:29:11 02/03/21)
+:: make run FILE="testcase3.bwp"
+./BlocksworldBFS testcase3.bwp
+success! iter=167428, depth=5, max queue size=52542
+move 0
+EGH
+AFI
+BJ
+C
+D
+<<<<<<<<<<
+move 1
+EGH
+AF
+BJ
+C
+DI
+<<<<<<<<<<
+move 2
+EGH
+A
+BJ
+C
+DIF
+<<<<<<<<<<
+move 3
+EGH
+A
+BJ
+
+DIFC
+<<<<<<<<<<
+move 4
+EGH
+
+BJ
+
+DIFCA
+<<<<<<<<<<
+move 5
+EG
+
+BJ
+
+DIFCAH
+<<<<<<<<<<

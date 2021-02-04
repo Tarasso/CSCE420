@@ -53,11 +53,6 @@ pair< vector<string>,vector<string> > readInput(string fileName)
         goalStateVec.push_back(line);
     }
 
-    // for(int i = 0; i < goalStateVec.size(); i++)
-    // {
-    //     cout << goalStateVec[i] << endl;
-    // }
-
     return make_pair(startStateVec,goalStateVec);
 }
 
