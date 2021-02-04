@@ -6,6 +6,8 @@
 #include "State.h"
 #include "Node.h"
 
+#define MAX_ITERS 5000000
+
 using namespace std;
 
 vector<string> split(string s, char c)
@@ -63,18 +65,22 @@ Node* BFS(Node* startNode, State* goalState)
 {
     int iter = 0;
     int depth = 0;
-    int maxQueueSize = 1;
+    int maxQueueSize = 0;
     
     Node* node = startNode;
 
     if(node->goal_test(goalState))
+    {
+        cout << "success! iter=" << iter << ", depth=" << node->depth << ", max queue size=" << maxQueueSize << endl;
         return node;
+    }
+        
     
     queue<Node*> frontier;
     frontier.push(node);
 
-    unordered_map<string,bool> reached;
-    reached.insert(make_pair(node->hash(),true));
+    unordered_map<string,Node*> reached;
+    reached.insert(make_pair(node->hash(),node));
 
     while(!frontier.empty())
     {
@@ -85,6 +91,12 @@ Node* BFS(Node* startNode, State* goalState)
 
         for(Node* child : children)
         {
+            if(iter > MAX_ITERS)
+            {
+                cout << "failed to solve problem: reached iteration limit of " << MAX_ITERS << endl;
+                return nullptr;
+            }
+            
             iter++;
 
             if(child->goal_test(goalState))
@@ -93,9 +105,9 @@ Node* BFS(Node* startNode, State* goalState)
                 return child;
             }
             
-            if(reached[child->hash()] == false)
+            if(reached[child->hash()] == 0)
             {
-                reached[child->hash()] = true;
+                reached[child->hash()] = child;
                 frontier.push(child);
                 if(frontier.size() > maxQueueSize)
                     maxQueueSize = frontier.size();
@@ -117,39 +129,16 @@ int main(int argc, char *argv[])
     State* startState = new State(vecPair.first);
     State* goalState = new State(vecPair.second);
 
-    Node* root = new Node(startState);
+    Node* startNode = new Node(startState);
 
-    Node* goalNode = BFS(root, goalState);
+    Node* goalNode = BFS(startNode, goalState);
 
-    if(goalState)
+    if(goalNode != NULL)
         goalNode->print_path();
 
 
-    //root->state->print();
-    //vector<Node*> nodes = root->successors();
-    //cout << "here" << endl;
-    // for(int i = 0; i < nodes.size(); i++)
-    // {
-    //     nodes[i]->print_path();
-    //     cout << endl << endl << endl;
-    // }
-
-    // cout << "Start State:" << endl;
-    // startState->print();
-    // cout << "<<<<<<<<<<<<" << endl;
-
-    // vector<State*> succs = startState->successors();
-    // for(int i = 0; i < succs.size(); i++)
-    // {
-    //     cout << "State " << i << ": " << succs[i]->hash() << endl;
-    // }
-
-
-    // clearing memory
-    // for(int i = 0; i < succs.size(); i++)
-    // {
-    //     delete succs[i];
-    // }
     delete startState;
+    delete startNode;
     delete goalState;
+    delete goalNode;
 }
