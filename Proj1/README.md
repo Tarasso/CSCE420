@@ -1,6 +1,6 @@
 # Proj1
 
-My project can be ran manually or with the make file after it is complied and linked using either of these commands:
+My project can be compiled using `make` and ran using either of these commands:
 * `make run FILE="<filename>"`
 * `./BlocksworldBFS <filename>`
 
