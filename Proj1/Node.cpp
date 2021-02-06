@@ -31,7 +31,7 @@ vector<Node*> Node::successors()
 {
     vector<Node*> succNodes;
     vector<State*> succs = state->successors();
-    for(int i = 0; i < succs.size(); i++)
+    for(unsigned int i = 0; i < succs.size(); i++)
     {
         Node* tempNode = new Node(succs[i], depth+1, this);
         succNodes.push_back(tempNode);
@@ -60,7 +60,7 @@ int Node::print_path()
         cout << "move " << depth << endl;
         state->print();
     }
-    
+    return 0;
 }
 
 

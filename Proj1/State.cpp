@@ -15,7 +15,7 @@ State::State(vector<string> s)
 
 void State::print() 
 {
-    for(int i = 0; i < bw.size(); i++)
+    for(unsigned int i = 0; i < bw.size(); i++)
     {
         cout << bw[i] << endl;
     }
@@ -24,7 +24,7 @@ void State::print()
 
 bool State::match(State* other)
 {
-    for(int i = 0; i < bw.size(); i++)
+    for(unsigned int i = 0; i < bw.size(); i++)
     {
         if(this->bw[i] != other->bw[i])
             return false;
@@ -36,7 +36,7 @@ bool State::match(State* other)
 string State::hash()
 {
     string ret = "";
-    for(int i = 0; i < bw.size(); i++)
+    for(unsigned int i = 0; i < bw.size(); i++)
     {
         ret += bw[i];
         if(i != bw.size()-1)
@@ -52,13 +52,13 @@ vector<State*> State::successors()
 {
     vector<State*> succs;
 
-    for(int oldRow = 0; oldRow < bw.size(); oldRow++)
+    for(unsigned int oldRow = 0; oldRow < bw.size(); oldRow++)
     {
         // no block to move
         if(bw[oldRow] == "")
             continue;
         
-        for(int newRow = 0; newRow < bw.size(); newRow++)
+        for(unsigned int newRow = 0; newRow < bw.size(); newRow++)
         {
             if(oldRow == newRow)
                 continue; // skip moving block from and to same row
@@ -66,7 +66,7 @@ vector<State*> State::successors()
             vector<string> newBw;
 
             //constructs new vector for new state
-            for(int i = 0; i < bw.size(); i++)
+            for(unsigned int i = 0; i < bw.size(); i++)
             {
                 if(i == oldRow)
                 {

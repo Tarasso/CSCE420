@@ -33,8 +33,8 @@ pair< vector<string>,vector<string> > readInput(string fileName)
     getline(file, line);
     vector<string> tokens = split(line, ' ');
     int stacks = stoi(tokens[0]);
-    int blocks = stoi(tokens[1]);
-    int moves = stoi(tokens[2]);
+    //int blocks = stoi(tokens[1]); not being used
+    //int moves = stoi(tokens[2]); not being used 
 
     vector<string> startStateVec;
     vector<string> goalStateVec;
@@ -56,18 +56,18 @@ pair< vector<string>,vector<string> > readInput(string fileName)
     return make_pair(startStateVec,goalStateVec);
 }
 
-Node* BFS(Node* startNode, State* goalState)
+void BFS(Node* startNode, State* goalState)
 {
     int iter = 0;
-    int depth = 0;
-    int maxQueueSize = 0;
+    //int depth = 0; not being used
+    unsigned int maxQueueSize = 0;
     
     Node* node = startNode;
 
     if(node->goal_test(goalState))
     {
         cout << "success! iter=" << iter << ", depth=" << node->depth << ", max queue size=" << maxQueueSize << endl;
-        return node;
+        node->print_path();
     }
         
     
@@ -89,7 +89,7 @@ Node* BFS(Node* startNode, State* goalState)
             if(iter > MAX_ITERS)
             {
                 cout << "failed to solve problem: reached iteration limit of " << MAX_ITERS << endl;
-                return nullptr;
+                return;
             }
             
             iter++;
@@ -97,7 +97,20 @@ Node* BFS(Node* startNode, State* goalState)
             if(child->goal_test(goalState))
             {
                 cout << "success! iter=" << iter << ", depth=" << child->depth << ", max queue size=" << maxQueueSize << endl;
-                return child;
+                child->print_path();
+                // for(auto item : reached)
+                // {
+                //     delete item.second;
+                // }
+                // for(Node* item : children)
+                //     delete item;
+                // while(!frontier.empty())
+                // {
+                //     Node* temp = frontier.front();
+                //     frontier.pop();
+                //     delete temp;
+                // }
+                return;
             }
             
             if(reached[child->hash()] == 0)
@@ -110,7 +123,7 @@ Node* BFS(Node* startNode, State* goalState)
         }
     }
 
-    return nullptr;
+    return;
 }
 
 
@@ -126,14 +139,9 @@ int main(int argc, char *argv[])
 
     Node* startNode = new Node(startState);
 
-    Node* goalNode = BFS(startNode, goalState);
-
-    if(goalNode != NULL)
-        goalNode->print_path();
-
+    BFS(startNode, goalState);
 
     delete startState;
     delete startNode;
     delete goalState;
-    delete goalNode;
 }
