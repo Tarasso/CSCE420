@@ -56,7 +56,7 @@ pair< vector<string>,vector<string> > readInput(string fileName)
     return make_pair(startStateVec,goalStateVec);
 }
 
-void BFS(Node* startNode, State* goalState)
+Node* BFS(Node* startNode, State* goalState)
 {
     int iter = 0;
     //int depth = 0; not being used
@@ -67,7 +67,7 @@ void BFS(Node* startNode, State* goalState)
     if(node->goal_test(goalState))
     {
         cout << "success! iter=" << iter << ", depth=" << node->depth << ", max queue size=" << maxQueueSize << endl;
-        node->print_path();
+        return node;
     }
         
     
@@ -89,7 +89,7 @@ void BFS(Node* startNode, State* goalState)
             if(iter > MAX_ITERS)
             {
                 cout << "failed to solve problem: reached iteration limit of " << MAX_ITERS << endl;
-                return;
+                return nullptr;
             }
             
             iter++;
@@ -97,20 +97,7 @@ void BFS(Node* startNode, State* goalState)
             if(child->goal_test(goalState))
             {
                 cout << "success! iter=" << iter << ", depth=" << child->depth << ", max queue size=" << maxQueueSize << endl;
-                child->print_path();
-                // for(auto item : reached)
-                // {
-                //     delete item.second;
-                // }
-                // for(Node* item : children)
-                //     delete item;
-                // while(!frontier.empty())
-                // {
-                //     Node* temp = frontier.front();
-                //     frontier.pop();
-                //     delete temp;
-                // }
-                return;
+                return child;
             }
             
             if(reached[child->hash()] == 0)
@@ -123,7 +110,8 @@ void BFS(Node* startNode, State* goalState)
         }
     }
 
-    return;
+    cout << "Frontier is empty" << endl;
+    return nullptr;
 }
 
 
@@ -139,9 +127,14 @@ int main(int argc, char *argv[])
 
     Node* startNode = new Node(startState);
 
-    BFS(startNode, goalState);
+    Node* goalNode = BFS(startNode, goalState);
+    if(goalNode != nullptr)
+        goalNode->print_path();
+    else
+        cout << "Goal node is null" << endl;
 
     delete startState;
     delete startNode;
     delete goalState;
+    delete goalNode;
 }
