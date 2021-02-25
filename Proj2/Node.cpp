@@ -6,18 +6,20 @@ using namespace std;
 #include "Node.h"
 #include <iostream>
 
-Node::Node(State* s)
+Node::Node(State* s, State* gs)
 {
     state = s;
     depth = 0;
     parent = nullptr;
+    score = 0;//depth + state->heuristic(gs);
 }
 
-Node::Node(State* s, int d, Node* p)
+Node::Node(State* s, int d, Node* p, State* gs)
 {
     state = s;
     depth = d;
     parent = p;
+    score = 0;//depth + state->heuristic(gs);
 }
 
 
@@ -33,7 +35,7 @@ vector<Node*> Node::successors()
     vector<State*> succs = state->successors();
     for(unsigned int i = 0; i < succs.size(); i++)
     {
-        Node* tempNode = new Node(succs[i], depth+1, this);
+        Node* tempNode = new Node(succs[i], depth+1, this, this->goalState);
         succNodes.push_back(tempNode);
     }
     return succNodes;

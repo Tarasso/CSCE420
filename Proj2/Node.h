@@ -12,11 +12,13 @@ class Node
 {   
     public:
         State* state;
+        State* goalState;
         int depth;
         Node* parent;
+        float score;
 
-        Node(State* s);
-        Node(State* s, int d, Node* p);
+        Node(State* s, State* gs);
+        Node(State* s, int d, Node* p, State* gs);
         bool goal_test(State* other);
         vector<Node*> successors();
         string hash();

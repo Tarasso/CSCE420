@@ -56,10 +56,17 @@ pair< vector<string>,vector<string> > readInput(string fileName)
     return make_pair(startStateVec,goalStateVec);
 }
 
-Node* BFS(Node* startNode, State* goalState)
+struct CompareScore
+{
+    bool operator()(const Node* lhs, const Node* rhs) const
+    {
+        return lhs->score < rhs->score;
+    }
+};
+
+Node* aStarSearch(Node* startNode, State* goalState)
 {
     int iter = 0;
-    //int depth = 0; not being used
     unsigned int maxQueueSize = 0;
     
     Node* node = startNode;
@@ -69,9 +76,9 @@ Node* BFS(Node* startNode, State* goalState)
         cout << "success! iter=" << iter << ", depth=" << node->depth << ", max queue size=" << maxQueueSize << endl;
         return node;
     }
-        
-    
-    queue<Node*> frontier;
+
+    priority_queue<Node*, vector<Node*>, CompareScore> frontier;
+    //queue<Node*> frontier;
     frontier.push(node);
 
     unordered_map<string,Node*> reached;
@@ -79,7 +86,7 @@ Node* BFS(Node* startNode, State* goalState)
 
     while(!frontier.empty())
     {
-        node = frontier.front();
+        node = frontier.top();
         frontier.pop();
 
         vector<Node*> children = node->successors();
@@ -100,7 +107,7 @@ Node* BFS(Node* startNode, State* goalState)
                 return child;
             }
             
-            if(reached[child->hash()] == 0)
+            if(reached[child->hash()] == 0 || child->depth < reached[child->hash()]->depth)
             {
                 reached[child->hash()] = child;
                 frontier.push(child);
@@ -125,9 +132,9 @@ int main(int argc, char *argv[])
     State* startState = new State(vecPair.first);
     State* goalState = new State(vecPair.second);
 
-    Node* startNode = new Node(startState);
+    Node* startNode = new Node(startState, goalState);
 
-    Node* goalNode = BFS(startNode, goalState);
+    Node* goalNode = aStarSearch(startNode, goalState);
     if(goalNode != nullptr)
         goalNode->print_path();
     else

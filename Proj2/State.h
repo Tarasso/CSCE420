@@ -15,7 +15,8 @@ class State
         void print();
         bool match(State* other);
         string hash();
-        vector<State*> successors(); 
+        vector<State*> successors();
+        float heuristic(State* goal);
 };
 
 

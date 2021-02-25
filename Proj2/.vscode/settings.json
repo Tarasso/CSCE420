@@ -7,6 +7,9 @@
         "utility": "cpp",
         "ostream": "cpp",
         "unordered_map": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "xutility": "cpp"
     }
 }

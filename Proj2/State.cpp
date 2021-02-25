@@ -97,7 +97,10 @@ vector<State*> State::successors()
     return succs;
 }
 
-
+float State::heuristic(State* goal)
+{
+    return 0.0;
+}
 
 
 #endif
