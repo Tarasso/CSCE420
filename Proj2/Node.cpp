@@ -12,7 +12,7 @@ Node::Node(State* s, State* gs)
     depth = 0;
     parent = nullptr;
     goalState = gs;
-    score = depth; // + state->heuristic(goalState);
+    score = depth + state->heuristic(goalState);
 }
 
 Node::Node(State* s, int d, Node* p, State* gs)
@@ -21,7 +21,7 @@ Node::Node(State* s, int d, Node* p, State* gs)
     depth = d;
     parent = p;
     goalState = gs;
-    score = depth; // + state->heuristic(goalState);
+    score = depth + state->heuristic(goalState);
 }
 
 

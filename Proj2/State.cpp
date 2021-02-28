@@ -108,14 +108,6 @@ float State::heuristic(State* goal)
 
     string goalEncoded = goal->hash();
     string currEncoded = this->hash();
-    //cout << "before loop" << endl;
-    // for(unsigned int i = 0; i < currEncoded.size(); i++)
-    // {
-    //     // adds one to blocksOutOfPlace for each block in the current state that does not align with the goal state
-    //     if(currEncoded[i] != ';' && currEncoded[i] != goalEncoded[i])
-    //         blocksOutOfPlace++;
-    // }
-    //cout << "after loop" << endl;
 
     vector<string> goalStateEncodedSplit = split(goal->hash(), ';');
     vector<string> currStateEncodedSplit = split(this->hash(), ';');
@@ -133,48 +125,6 @@ float State::heuristic(State* goal)
             }
         }
     }
-
-    cout << "curr: \"" << this->hash() << "\"" << endl;
-    cout << "goal: \"" << goal->hash() << "\"" << endl;
-    cout << "blocks out of place " << blocksOutOfPlace << endl;
-    
-    // cout << "current: ";
-    // for(string s : currStateEncodedSplit)
-    //     cout << "\"" << s << "\" ";
-    // cout << endl << "goal: ";
-    // for(string s : goalStateEncodedSplit)
-    //     cout << "\"" << s << "\" ";
-    // cout << endl;
-    
-    // cout << "made it here" << endl;
-    // // each stack in current state
-    // for(unsigned int i = 0; i < currStateEncodedSplit.size(); i++)
-    // {
-    //     cout << "i = " << i << endl;
-    //     // if the stack is empty in current and goal, just keep moving
-    //     if(goalStateEncodedSplit[i] == "" && currStateEncodedSplit[i] == "")
-    //     {
-    //         cout << "made it here" << endl;
-    //         continue;
-    //     }
-    //     cout << "why am i here????" << endl;
-                
-        
-    //     // each letter in each stack
-    //     for(unsigned int j = 0; j < currStateEncodedSplit[i].size(); j++)
-    //     {
-    //         cout << "j = " << j << endl;
-    //         cout << "current: " << currStateEncodedSplit[i] << endl;
-    //         cout << "goal: " << goalStateEncodedSplit[i] << endl;
-    //         // handle empty string issues
-    //         if((goalStateEncodedSplit[i] != "" && currStateEncodedSplit[i] == "")
-    //         || (goalStateEncodedSplit[i] == "" && currStateEncodedSplit[i] != ""))
-    //             blocksOutOfPlace++;
-    //         // check if in same location
-    //         else if(goalStateEncodedSplit[i][j] != (currStateEncodedSplit[i][j]))
-    //             blocksOutOfPlace++;
-    //     }
-    // }
     
     return blocksOutOfPlace;
 }

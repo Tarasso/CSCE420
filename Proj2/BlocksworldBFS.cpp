@@ -62,7 +62,7 @@ struct CompareScore
 {
     bool operator()(const Node* lhs, const Node* rhs) const
     {
-        return lhs->score < rhs->score;
+        return lhs->score > rhs->score;
     }
 };
 
@@ -91,6 +91,7 @@ Node* aStarSearch(Node* startNode, State* goalState)
     {
         node = frontier.top();
         frontier.pop();
+        cout << "node popped depth " << node->depth << endl;
         //cout << "before children" << endl;
         vector<Node*> children = node->successors();
         //cout << "created children" << endl;
