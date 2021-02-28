@@ -11,7 +11,8 @@ Node::Node(State* s, State* gs)
     state = s;
     depth = 0;
     parent = nullptr;
-    score = 0;//depth + state->heuristic(gs);
+    goalState = gs;
+    score = depth; // + state->heuristic(goalState);
 }
 
 Node::Node(State* s, int d, Node* p, State* gs)
@@ -19,7 +20,8 @@ Node::Node(State* s, int d, Node* p, State* gs)
     state = s;
     depth = d;
     parent = p;
-    score = 0;//depth + state->heuristic(gs);
+    goalState = gs;
+    score = depth; // + state->heuristic(goalState);
 }
 
 
@@ -33,11 +35,13 @@ vector<Node*> Node::successors()
 {
     vector<Node*> succNodes;
     vector<State*> succs = state->successors();
+    //cout << "successors generated" << endl;
     for(unsigned int i = 0; i < succs.size(); i++)
     {
         Node* tempNode = new Node(succs[i], depth+1, this, this->goalState);
         succNodes.push_back(tempNode);
     }
+    //cout << "done creating successors" << endl;
     return succNodes;
 }
 

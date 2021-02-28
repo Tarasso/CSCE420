@@ -3,22 +3,24 @@
 #include <sstream>
 #include <queue>
 #include <unordered_map>
+#include <stdlib.h>
 #include "State.h"
+#include "HelperLib.h"
 #include "Node.h"
 
 #define MAX_ITERS 5000000
 
 using namespace std;
 
-vector<string> split(string s, char c)
-{
-  istringstream ss(s);
-  string token;
-  vector<string> tokens;
-  while(getline(ss,token,c))
-    tokens.push_back(token);
-  return tokens;
-}
+// vector<string> split(string s, char c)
+// {
+//   istringstream ss(s);
+//   string token;
+//   vector<string> tokens;
+//   while(getline(ss,token,c))
+//     tokens.push_back(token);
+//   return tokens;
+// }
 
 
 pair< vector<string>,vector<string> > readInput(string fileName)
@@ -80,16 +82,18 @@ Node* aStarSearch(Node* startNode, State* goalState)
     priority_queue<Node*, vector<Node*>, CompareScore> frontier;
     //queue<Node*> frontier;
     frontier.push(node);
-
+    cout << "frontier created and node added" << endl;
     unordered_map<string,Node*> reached;
     reached.insert(make_pair(node->hash(),node));
+    cout << "reached created and node added" << endl;
 
     while(!frontier.empty())
     {
         node = frontier.top();
         frontier.pop();
-
+        //cout << "before children" << endl;
         vector<Node*> children = node->successors();
+        //cout << "created children" << endl;
 
         for(Node* child : children)
         {
