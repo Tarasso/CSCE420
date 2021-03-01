@@ -1,7 +1,7 @@
-all: BlocksworldBFS
+all: BlocksworldAstar
 
-BlocksworldBFS: BlocksworldBFS.cpp HelperLib.o State.o Node.o 
-	g++ -o BlocksworldBFS -Wall -std=c++11 BlocksworldBFS.cpp State.o Node.o HelperLib.o -g
+BlocksworldAstar: BlocksworldAstar.cpp HelperLib.o State.o Node.o 
+	g++ -o BlocksworldAstar -Wall -std=c++11 BlocksworldAstar.cpp State.o Node.o HelperLib.o -g
 
 HelperLib.o: HelperLib.cpp HelperLib.h
 	g++ -c -Wall -std=c++11 HelperLib.cpp -g
@@ -15,10 +15,10 @@ Node.o: Node.cpp Node.h State.h
 
 
 run:
-	./BlocksworldBFS $(FILE)
+	./BlocksworldAstar $(FILE)
 
 valgrind:
-	valgrind --leak-check=full ./BlocksworldBFS $(FILE) 
+	valgrind --leak-check=full ./BlocksworldAstar $(FILE) 
 
 clean:
 	rm *.o

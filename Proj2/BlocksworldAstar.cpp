@@ -8,20 +8,9 @@
 #include "HelperLib.h"
 #include "Node.h"
 
-#define MAX_ITERS 5000000
+#define MAX_ITERS 100000
 
 using namespace std;
-
-// vector<string> split(string s, char c)
-// {
-//   istringstream ss(s);
-//   string token;
-//   vector<string> tokens;
-//   while(getline(ss,token,c))
-//     tokens.push_back(token);
-//   return tokens;
-// }
-
 
 pair< vector<string>,vector<string> > readInput(string fileName)
 {
