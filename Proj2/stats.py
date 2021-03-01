@@ -15,7 +15,7 @@ for filename in os.listdir(directory):
         failed = failed + 1
     output[testNum] = stuff
 
-fileOut = open("results.txt",'w')
+fileOut = open("STATISTICS.txt",'w')
 
 for i in range(1,46):
     fileOut.write(f"test {i}: {output[i]}\n")
