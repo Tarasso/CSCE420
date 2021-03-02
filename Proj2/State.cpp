@@ -10,6 +10,7 @@ using namespace std;
 #include <string>
 #include <vector>
 #include <sstream>
+#include <cassert>
 
 
 State::State(vector<string> s)
@@ -101,9 +102,9 @@ vector<State*> State::successors()
     return succs;
 }
 
+
 float State::heuristic(State* goal)
 {
-    // number of blocks out of place
     unsigned int estimatedMovesRemaining = 0;
     bool topBlocksRemoved = false;
 
@@ -124,9 +125,10 @@ float State::heuristic(State* goal)
                 // stack in goal is empty or the stack should not contain block (aka in wrong stack)
                 if(goalStateEncodedSplit[i] == "" || goalStateEncodedSplit[i].find(currStateEncodedSplit[i][j]) ==  string::npos)
                 {
-                    // number of blocks on top of block that need to be moved in order to move the current block that is out of place
+                    
                     if(!topBlocksRemoved)
                     {
+                        // number of blocks on top of block that need to be moved in order to move the current block that is out of place
                         estimatedMovesRemaining += currStateEncodedSplit[i].size() - j - 1;
                         for(unsigned int k = j; k < currStateEncodedSplit[i].size(); k++)
                         {
@@ -168,6 +170,5 @@ float State::heuristic(State* goal)
     
     return estimatedMovesRemaining;
 }
-
 
 #endif

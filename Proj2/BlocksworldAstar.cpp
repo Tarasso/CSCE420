@@ -71,19 +71,14 @@ Node* aStarSearch(Node* startNode, State* goalState)
     priority_queue<Node*, vector<Node*>, CompareScore> frontier;
     //queue<Node*> frontier;
     frontier.push(node);
-    cout << "frontier created and node added" << endl;
     unordered_map<string,Node*> reached;
     reached.insert(make_pair(node->hash(),node));
-    cout << "reached created and node added" << endl;
 
     while(!frontier.empty())
     {
         node = frontier.top();
         frontier.pop();
-        cout << "node popped depth " << node->depth << endl;
-        //cout << "before children" << endl;
         vector<Node*> children = node->successors();
-        //cout << "created children" << endl;
 
         for(Node* child : children)
         {
