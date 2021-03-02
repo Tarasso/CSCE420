@@ -128,6 +128,12 @@ float State::heuristic(State* goal)
                     if(!topBlocksRemoved)
                     {
                         estimatedMovesRemaining += currStateEncodedSplit[i].size() - j - 1;
+                        for(unsigned int k = j; k < currStateEncodedSplit[i].size(); k++)
+                        {
+                            // add another move if we are moving blocks on top that need to be returned
+                            if(goalStateEncodedSplit[i].find(currStateEncodedSplit[i][k]) !=  string::npos)
+                                estimatedMovesRemaining++;
+                        }
                         topBlocksRemoved = true;
                     }
                     
@@ -142,6 +148,12 @@ float State::heuristic(State* goal)
                     if(!topBlocksRemoved)
                     {
                         estimatedMovesRemaining += currStateEncodedSplit[i].size() - j - 1;
+                        for(unsigned int k = j; k < currStateEncodedSplit[i].size(); k++)
+                        {
+                            // add another move if we are moving blocks on top that need to be returned
+                            if(goalStateEncodedSplit[i].find(currStateEncodedSplit[i][k]) !=  string::npos)
+                                estimatedMovesRemaining++;
+                        }
                         topBlocksRemoved = true;
                     }
 
