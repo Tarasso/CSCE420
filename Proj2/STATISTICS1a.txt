@@ -1,0 +1,46 @@
+test 1: success! iter=252, depth=9, max queue size=103
+test 2: success! iter=124, depth=7, max queue size=55
+test 3: success! iter=76, depth=8, max queue size=34
+test 4: success! iter=225, depth=8, max queue size=88
+test 5: success! iter=101, depth=8, max queue size=44
+test 6: success! iter=5278, depth=20, max queue size=2270
+test 7: success! iter=98634, depth=24, max queue size=34233
+test 8: success! iter=479, depth=17, max queue size=224
+test 9: success! iter=13647, depth=25, max queue size=5102
+test 10: failed
+test 11: failed
+test 12: failed
+test 13: failed
+test 14: failed
+test 15: failed
+test 16: success! iter=81, depth=4, max queue size=49
+test 17: success! iter=71, depth=5, max queue size=49
+test 18: success! iter=37, depth=4, max queue size=21
+test 19: success! iter=258, depth=7, max queue size=173
+test 20: success! iter=113, depth=6, max queue size=80
+test 21: success! iter=223, depth=10, max queue size=156
+test 22: success! iter=23943, depth=16, max queue size=12279
+test 23: success! iter=5847, depth=17, max queue size=3130
+test 24: success! iter=1313, depth=13, max queue size=879
+test 25: success! iter=4364, depth=14, max queue size=2478
+test 26: failed
+test 27: failed
+test 28: failed
+test 29: failed
+test 30: failed
+test 31: success! iter=116, depth=4, max queue size=93
+test 32: success! iter=195, depth=4, max queue size=152
+test 33: success! iter=321, depth=4, max queue size=235
+test 34: success! iter=404, depth=6, max queue size=266
+test 35: success! iter=305, depth=5, max queue size=237
+test 36: success! iter=8440, depth=12, max queue size=6625
+test 37: success! iter=1171, depth=11, max queue size=944
+test 38: failed
+test 39: success! iter=10850, depth=14, max queue size=8590
+test 40: success! iter=18933, depth=13, max queue size=13723
+test 41: success! iter=60164, depth=27, max queue size=42689
+test 42: failed
+test 43: failed
+test 44: success! iter=96191, depth=29, max queue size=75326
+test 45: failed
+Passed: 30, Failed: 15

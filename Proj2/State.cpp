@@ -104,7 +104,8 @@ vector<State*> State::successors()
 float State::heuristic(State* goal)
 {
     // number of blocks out of place
-    unsigned int blocksOutOfPlace = 0;
+    unsigned int estimatedMovesRemaining = 0;
+    bool topBlocksRemoved = false;
 
     string goalEncoded = goal->hash();
     string currEncoded = this->hash();
@@ -114,19 +115,46 @@ float State::heuristic(State* goal)
 
     for(unsigned int i = 0; i < currStateEncodedSplit.size(); i++)
     {
+        // ensures stack in current state is nonempty
         if(currStateEncodedSplit[i] != "")
         {
+            // loops for each block in stack i
             for(unsigned int j = 0; j < currStateEncodedSplit[i].size(); j++)
             {
-                if(goalStateEncodedSplit[i] == "")
-                    blocksOutOfPlace++;
+                // stack in goal is empty or the stack should not contain block (aka in wrong stack)
+                if(goalStateEncodedSplit[i] == "" || goalStateEncodedSplit[i].find(currStateEncodedSplit[i][j]) ==  string::npos)
+                {
+                    // number of blocks on top of block that need to be moved in order to move the current block that is out of place
+                    if(!topBlocksRemoved)
+                    {
+                        estimatedMovesRemaining += currStateEncodedSplit[i].size() - j - 1;
+                        topBlocksRemoved = true;
+                    }
+                    
+                    // add one more to move the block to the correct stack
+                    estimatedMovesRemaining++;
+                }
+                    
+                // exact blocks do not match but in the correct stack (as per if above)
                 else if(currStateEncodedSplit[i][j] != goalStateEncodedSplit[i][j])
-                    blocksOutOfPlace++;
+                {
+                    // number of blocks on top of block that need to be moved in order to move the current block that is out of place
+                    if(!topBlocksRemoved)
+                    {
+                        estimatedMovesRemaining += currStateEncodedSplit[i].size() - j - 1;
+                        topBlocksRemoved = true;
+                    }
+
+                    // move off stack and then back on in correct place
+                    estimatedMovesRemaining += 2;
+                }
+                    
             }
+            topBlocksRemoved = false;
         }
     }
     
-    return blocksOutOfPlace;
+    return estimatedMovesRemaining;
 }
 
 
