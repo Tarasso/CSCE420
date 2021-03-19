@@ -7,7 +7,7 @@
 
 using namespace std;
 
-#include "parser.hpp"
+#include "parser.h"
 
 //----------------------------
 
@@ -40,7 +40,7 @@ Expr::Expr(Expr* e)
   if (e->kind==ATOM) sym = e->sym;
   else
   {
-    for (int i=0 ; i<e->sub.size() ; i++)
+    for (unsigned int i=0 ; i<e->sub.size() ; i++)
       sub.push_back(new Expr(e->sub[i])); // deep copy
   }
 }
@@ -50,7 +50,7 @@ Expr::Expr(Expr* e)
 Expr::Expr(vector<Expr*> L)
 {
   kind = LIST;
-  for (int i=0 ; i<L.size() ; i++)
+  for (unsigned int i=0 ; i<L.size() ; i++)
     sub.push_back(new Expr(L[i])); // deep copy
 }
 
@@ -104,7 +104,7 @@ bool Eq(Expr* a, Expr* b)
   else // a->kind==LIST
   {
     if (b->kind!=LIST || a->sub.size()!=b->sub.size()) return false;
-    for (int i=0 ; i<a->sub.size() ; i++)
+    for (unsigned int i=0 ; i<a->sub.size() ; i++)
       if (!Eq(a->sub[i],b->sub[i])) return false;
   }
   return true;
@@ -128,7 +128,7 @@ vector<Expr*>load_kb(string fname)
 
 void show_kb(vector<Expr*>& KB)
 {
-  for (int i=0 ; i<KB.size() ; i++)
+  for (unsigned int i=0 ; i<KB.size() ; i++)
   {
     cout << i << ". ";
     cout << KB[i]->toString() << endl;

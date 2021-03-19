@@ -1,0 +1,16 @@
+// each box can only be 1 label
+C1Y->-C1W^-C1B
+C1W->-C1Y^-C1B
+C1B->-C1W^-C1Y (continue for each box)
+
+// boxes have diff labels
+C1Y->-C2Y^-C3Y
+C1W->-C2W^-C3W
+C1B->-C2B^-C3B (continue for each box)
+
+// initial observation is wrong
+L1W->-C1W
+L1Y->-C1Y
+L1B->-C1B (continue for each box)
+
+//
