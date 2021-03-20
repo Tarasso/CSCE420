@@ -7,12 +7,12 @@ using namespace std;
 
 Expr* ModusPonens(Expr* s1, Expr* s2);
 Expr* ImplicationElimination(Expr* s1);
-Expr* AndElimination(Expr* s1, Expr* s2);
+Expr* AndElimination(Expr* s1);
 Expr* AndIntroduction(Expr* s1, Expr* s2);
 Expr* OrIntroduction(Expr* s1, Expr* s2);
-Expr* DoubleNegationElimination(Expr* s1, Expr* s2);
+Expr* DoubleNegationElimination(Expr* s1);
 Expr* Resolution(Expr* s1, Expr* s2);
-Expr* DeMorgans(Expr* s1, Expr* s2);
+Expr* DeMorgans(Expr* s1);
 
 
 #endif
