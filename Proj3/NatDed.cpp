@@ -29,7 +29,6 @@ Expr* ImplicationElimination(Expr* s1)
     {
         Expr* lhs = s1->sub.at(1);
         Expr* notLhs = parse("(not " + lhs->toString() + ")");
-        // cout << "notLhs " << notLhs->toString() << endl;
         Expr* rhs = s1->sub.at(2);
         return parse("(and " + notLhs->toString() + " " + rhs->toString() + ")");
     }
