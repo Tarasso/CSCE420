@@ -13,6 +13,7 @@ Expr* OrIntroduction(Expr* s1, Expr* s2);
 Expr* DoubleNegationElimination(Expr* s1);
 Expr* Resolution(Expr* s1, Expr* s2);
 Expr* DeMorgans(Expr* s1);
+Expr* Commute(Expr* s1);
 
 
 #endif

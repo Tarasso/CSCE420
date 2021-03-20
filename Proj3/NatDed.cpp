@@ -76,18 +76,18 @@ Expr* DoubleNegationElimination(Expr* s1)
 
 // ex: AvB, ~AvC returns BvC
 // requires matching literal to be on lhs of each expr
+// s2 is allowed to be of type ATOM
 Expr* Resolution(Expr* s1, Expr* s2)
 {
-    if(s1->kind == ATOM || s2->kind == ATOM)
+    if(s1->kind == ATOM)
         throw RuleApplicationError("expression should be of type list");
 
-    if(("(not " + s1->sub.at(1)->toString() + ")") == s2->sub.at(1)->toString())
+    if((("(not " + s1->sub.at(1)->toString() + ")") == s2->sub.at(1)->toString()))
         return parse("(or " + s1->sub.at(2)->toString() + " " + s2->sub.at(2)->toString() + ")");
+    else if((("(not " + s1->sub.at(1)->toString() + ")") == s2->toString()))
+        return parse(s1->sub.at(2)->toString());
     else
-    {
-        cout << "returning null" << endl;
         return nullptr;
-    }
 }
 
 // ex: ~(A^B) returns ~Av~B
@@ -106,6 +106,21 @@ Expr* DeMorgans(Expr* s1)
         else
             throw RuleApplicationError("improper demorgans format expr given");
     }
+    else
+        return nullptr;
+}
+
+// ex: AvB returns BvA
+// ex: A^B returns B^A
+Expr* Commute(Expr* s1)
+{
+    if(s1->kind == ATOM)
+        throw RuleApplicationError("expression should be of type list");
+    
+    if(s1->sub.at(0)->sym == "and")
+        return parse("(and " + s1->sub.at(2)->toString() + " " + s1->sub.at(1)->toString() + ")");
+    else if(s1->sub.at(0)->sym == "or")
+        return parse("(or " + s1->sub.at(2)->toString() + " " + s1->sub.at(1)->toString() + ")");
     else
         return nullptr;
 }
