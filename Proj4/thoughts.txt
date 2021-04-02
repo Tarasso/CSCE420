@@ -1,0 +1,34 @@
+// states:
+// WA: Western Aus
+// NT: North Territory
+// SA: South Aus
+// Q: Queensland
+// NSW: New South Wales
+// V: Victoria
+// T: Tasmania
+
+// each state can is 1 of 3 colors
+WAR v WAG v WAB
+NTR v NTG v NTB
+...
+TR v TG v TB
+
+// each state can be at most 1 color
+WAR -> -WAG ^ -WAB |**to cnf**| -WAR v -WAG && -WAR v -WAB
+WAG -> -WAR ^ -WAB |**to cnf**| -WAG v -WAR && -WAG v -WAB
+WAB -> -WAR ^ -WAG |**to cnf**| -WAB v -WAR && -WAB v -WAG
+...
+
+
+// neighbors
+// SA: WA, NT, Q, NSW, V
+// WA: NT
+// NT: Q
+// Q: NSW
+// NSW: V
+
+// side by sides must be different colors
+SAR -> -WAR ^ -NTR ^ -QR ^ -NSWR ^ -VR |**to cnf**| -SAR v -WAR && -SAR v -NTR ...
+SAG -> ...
+SAB -> ...
+...
