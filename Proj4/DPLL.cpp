@@ -101,30 +101,58 @@ bool containsFalseClause(vector<Expr*> clauses, MODEL* model)
   return false;
 }
 
+MODEL* deepCopy(MODEL* oldModel)
+{
+  MODEL* newModel = new MODEL();
+  for(auto it : *oldModel)
+    newModel->insert(it);
+
+  return newModel;
+}
+
+string getNextSymbol(vector<string> symbols, MODEL* model)
+{
+  for(unsigned int i = 0; i < symbols.size(); i++)
+    {
+      // if symbol is not current in the model
+      if(model->find(symbols.at(i)) == model->end())
+        return symbols.at(i);
+    }
+
+  cout << "there is prob something wrong" << endl;
+  return "";
+}
+
 MODEL* DPLL(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
 {
   ++dpllCalls;
   // printing documentation
   printModel(model, symbols);
-  cout << "num clauses satisfied: " << numSatClauses(clauses, model) << "out of " << clauses.size() << endl;
+  cout << "num clauses satisfied: " << numSatClauses(clauses, model) << " out of " << clauses.size() << endl;
   
   // if all clauses are true then return true
   if (numSatClauses(clauses, model) == clauses.size())
     return model;
   // if any single clause is false then return false
   if (containsFalseClause(clauses, model))
+  {
+    cout << "back-tracking..." << endl;
     return nullptr;
+  }
 
-  // else: (meaning nothing is false, but not everything is true yet)
+  // choose symbol to try
+  string newSymbol = getNextSymbol(symbols, model);
 
+  MODEL* newModel0 = deepCopy(model);
+  newModel0->insert(make_pair(newSymbol,false));
+  MODEL* newModel1 = deepCopy(model);
+  newModel1->insert(make_pair(newSymbol,true));
 
+  cout << "trying " << newSymbol << "=0" << endl << endl;
+  DPLL(clauses, symbols, newModel0);
+  cout << "trying " << newSymbol << "=1" << endl << endl;
+  DPLL(clauses, symbols, newModel1);
 
-  // choose symbol to try P
-  // remove P from symbols
-  // add P to model
-
-  // return DPLL(clauses, symbols, model + P=true) || DPLL(clauses, symbols, model + P=false)
-  
   return nullptr;
 }
 
@@ -165,11 +193,7 @@ int main(int argc, char* argv[])
   {
     string flag = argv[2];
     if(flag == "-unit")
-    {
-    useUnitClause = false;
-    cout << "will not use unit clause" << endl;
-    }
-
+      useUnitClause = false;
   }
 
   try
@@ -178,30 +202,31 @@ int main(int argc, char* argv[])
     vector<Expr*> KB = load_kb(argv[1]);
     // print KB
     show_kb(KB);
+    cout << endl << endl;
     // obtain all symbols in KB
     vector<string> symbols = getSymbols(KB);
     // begin with empty model
     MODEL* model = new MODEL();
     // run DPLL
-    // MODEL* finalModel = DPLL(KB, symbols, model);
-    // // print results
-    // if(finalModel != nullptr)
-    // {
-    //   cout << "success!" << endl;
-    //   cout << "number of DPLL calls = " << dpllCalls;
-    //   if(useUnitClause)
-    //     cout << "(WITH unit-clause heuristic)" << endl;
-    //   else
-    //     cout << "(WITHOUT unit-clause heuristic)" << endl;
+    MODEL* finalModel = DPLL(KB, symbols, model);
+    // print results
+    if(finalModel != nullptr)
+    {
+      cout << "success!" << endl;
+      cout << "number of DPLL calls = " << dpllCalls;
+      if(useUnitClause)
+        cout << "(WITH unit-clause heuristic)" << endl;
+      else
+        cout << "(WITHOUT unit-clause heuristic)" << endl;
 
-    //   cout << "here is a model: " << endl;
-    //   printModel(finalModel, symbols);
-    // }
-    // else
-    // {
-    //   cout << "failure!" << endl;
-    //   cout << "model is unsatisfiable" << endl;
-    // }
+      cout << "here is a model: " << endl;
+      printModel(finalModel, symbols);
+    }
+    else
+    {
+      cout << "failure!" << endl;
+      cout << "model is unsatisfiable" << endl;
+    }
 
 
     // obtain or hardcode symbols

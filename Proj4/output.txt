@@ -1,0 +1,1442 @@
+0. (or WAR WAG WAB)
+1. (or NTR NTG NTB)
+2. (or SAR SAG SAB)
+3. (or QR QG QB)
+4. (or NSWR NSWG NSWB)
+5. (or VR VG VB)
+6. (or TR TG TB)
+7. (or not (WAR) not (WAG))
+8. (or not (WAR) not (WAB))
+9. (or not (WAG) not (WAR))
+10. (or not (WAG) not (WAB))
+11. (or not (WAB) not (WAR))
+12. (or not (WAB) not (WAG))
+13. (or not (NTR) not (NTG))
+14. (or not (NTR) not (NTB))
+15. (or not (NTG) not (NTR))
+16. (or not (NTG) not (NTB))
+17. (or not (NTB) not (NTR))
+18. (or not (NTB) not (NTG))
+19. (or not (SAR) not (SAG))
+20. (or not (SAR) not (SAB))
+21. (or not (SAG) not (SAR))
+22. (or not (SAG) not (SAB))
+23. (or not (SAB) not (SAR))
+24. (or not (SAB) not (SAG))
+25. (or not (QR) not (QG))
+26. (or not (QR) not (QB))
+27. (or not (QG) not (QR))
+28. (or not (QG) not (QB))
+29. (or not (QB) not (QR))
+30. (or not (QB) not (QG))
+31. (or not (NSWR) not (NSWG))
+32. (or not (NSWR) not (NSWB))
+33. (or not (NSWG) not (NSWR))
+34. (or not (NSWG) not (NSWB))
+35. (or not (NSWB) not (NSWR))
+36. (or not (NSWB) not (NSWG))
+37. (or not (VR) not (VG))
+38. (or not (VR) not (VB))
+39. (or not (VG) not (VR))
+40. (or not (VG) not (VB))
+41. (or not (VB) not (VR))
+42. (or not (VB) not (VG))
+43. (or not (TR) not (TG))
+44. (or not (TR) not (TB))
+45. (or not (TG) not (TR))
+46. (or not (TG) not (TB))
+47. (or not (TB) not (TR))
+48. (or not (TB) not (TG))
+49. (or not (WAR) not (NTR))
+50. (or not (WAG) not (NTG))
+51. (or not (WAB) not (NTB))
+52. (or not (NTR) not (QR))
+53. (or not (NTG) not (QG))
+54. (or not (NTB) not (QB))
+55. (or not (SAR) not (WAR))
+56. (or not (SAR) not (NTR))
+57. (or not (SAR) not (QR))
+58. (or not (SAR) not (NSWR))
+59. (or not (SAR) not (VR))
+60. (or not (SAG) not (WAG))
+61. (or not (SAG) not (NTG))
+62. (or not (SAG) not (QG))
+63. (or not (SAG) not (NSWG))
+64. (or not (SAG) not (VG))
+65. (or not (SAB) not (WAB))
+66. (or not (SAB) not (NTB))
+67. (or not (SAB) not (QB))
+68. (or not (SAB) not (NSWB))
+69. (or not (SAB) not (VB))
+70. (or not (QR) not (NSWR))
+71. (or not (QG) not (NSWG))
+72. (or not (QB) not (NSWB))
+73. (or not (NSWR) not (VR))
+74. (or not (NSWG) not (VG))
+75. (or not (NSWB) not (VB))
+
+
+WAR=? WAG=? WAB=? NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 0 out of 76
+trying WAR=0
+
+WAR=F WAG=? WAB=? NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 6 out of 76
+trying WAG=0
+
+WAR=F WAG=F WAB=? NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 10 out of 76
+trying WAB=0
+
+WAR=F WAG=F WAB=F NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 12 out of 76
+back-tracking...
+trying WAB=1
+
+WAR=F WAG=F WAB=T NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 11 out of 76
+trying NTR=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 17 out of 76
+trying NTG=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=F NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 21 out of 76
+trying NTB=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=F NTB=F SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 24 out of 76
+back-tracking...
+trying NTB=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=F NTB=T SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 22 out of 76
+back-tracking...
+trying NTG=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 18 out of 76
+trying NTB=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 23 out of 76
+trying SAR=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=F SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 30 out of 76
+trying SAG=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=F SAG=F SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 36 out of 76
+trying SAB=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=F SAG=F SAB=F QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 40 out of 76
+back-tracking...
+trying SAB=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 37 out of 76
+back-tracking...
+trying SAG=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=F SAG=T SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 31 out of 76
+back-tracking...
+trying SAR=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 24 out of 76
+trying SAG=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 32 out of 76
+trying SAB=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 38 out of 76
+trying QR=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 44 out of 76
+trying QG=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 48 out of 76
+trying QB=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=F NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+back-tracking...
+trying QB=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+trying NSWR=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 55 out of 76
+trying NSWG=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=F NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 58 out of 76
+trying NSWB=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=F NSWB=F VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+back-tracking...
+trying NSWB=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=F NSWB=T VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 59 out of 76
+back-tracking...
+trying NSWG=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 56 out of 76
+trying NSWB=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+trying VR=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 65 out of 76
+trying VG=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=? TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+trying VB=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=F TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+back-tracking...
+trying VB=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=? TG=? TB=? 
+num clauses satisfied: 69 out of 76
+trying TR=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=F TG=? TB=? 
+num clauses satisfied: 73 out of 76
+trying TG=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=F TG=F TB=? 
+num clauses satisfied: 75 out of 76
+trying TB=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=F TG=F TB=F 
+num clauses satisfied: 75 out of 76
+back-tracking...
+trying TB=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=F TG=F TB=T 
+num clauses satisfied: 76 out of 76
+trying TG=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=F TG=T TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=F TG=T TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=F TG=T TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TR=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=T TG=? TB=? 
+num clauses satisfied: 70 out of 76
+trying TG=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=T TG=F TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=T TG=F TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=T TG=F TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TG=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=T TG=T TB=? 
+num clauses satisfied: 70 out of 76
+back-tracking...
+trying VG=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=F VG=T VB=? TR=? TG=? TB=? 
+num clauses satisfied: 66 out of 76
+back-tracking...
+trying VR=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=F VR=T VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 61 out of 76
+back-tracking...
+trying NSWB=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=T VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 56 out of 76
+back-tracking...
+trying NSWR=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=T NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 50 out of 76
+back-tracking...
+trying QG=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=F QG=T QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 45 out of 76
+back-tracking...
+trying QR=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=F QR=T QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 39 out of 76
+back-tracking...
+trying SAB=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=F SAB=T QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 32 out of 76
+back-tracking...
+trying SAG=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=F SAR=T SAG=T SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 24 out of 76
+back-tracking...
+trying NTB=1
+
+WAR=F WAG=F WAB=T NTR=F NTG=T NTB=T SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 18 out of 76
+back-tracking...
+trying NTR=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 12 out of 76
+trying NTG=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 18 out of 76
+trying NTB=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 23 out of 76
+trying SAR=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 31 out of 76
+trying SAG=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=F SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 36 out of 76
+trying SAB=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=F SAB=F QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 40 out of 76
+back-tracking...
+trying SAB=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 37 out of 76
+back-tracking...
+trying SAG=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 32 out of 76
+trying SAB=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 38 out of 76
+trying QR=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 44 out of 76
+trying QG=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 48 out of 76
+trying QB=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=F NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+back-tracking...
+trying QB=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+trying NSWR=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=F NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 54 out of 76
+trying NSWG=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=F NSWG=F NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 58 out of 76
+trying NSWB=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=F NSWG=F NSWB=F VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+back-tracking...
+trying NSWB=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=F NSWG=F NSWB=T VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 59 out of 76
+back-tracking...
+trying NSWG=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=F NSWG=T NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 55 out of 76
+back-tracking...
+trying NSWR=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 50 out of 76
+trying NSWG=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 56 out of 76
+trying NSWB=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+trying VR=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 65 out of 76
+trying VG=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=? TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+trying VB=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=F TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+back-tracking...
+trying VB=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=? TG=? TB=? 
+num clauses satisfied: 69 out of 76
+trying TR=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=F TG=? TB=? 
+num clauses satisfied: 73 out of 76
+trying TG=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=F TG=F TB=? 
+num clauses satisfied: 75 out of 76
+trying TB=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=F TG=F TB=F 
+num clauses satisfied: 75 out of 76
+back-tracking...
+trying TB=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=F TG=F TB=T 
+num clauses satisfied: 76 out of 76
+trying TG=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=F TG=T TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=F TG=T TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=F TG=T TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TR=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=T TG=? TB=? 
+num clauses satisfied: 70 out of 76
+trying TG=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=T TG=F TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=T TG=F TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=T TG=F TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TG=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=T TG=T TB=? 
+num clauses satisfied: 70 out of 76
+back-tracking...
+trying VG=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=F VG=T VB=? TR=? TG=? TB=? 
+num clauses satisfied: 66 out of 76
+back-tracking...
+trying VR=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=F VR=T VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 61 out of 76
+back-tracking...
+trying NSWB=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=F NSWB=T VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 56 out of 76
+back-tracking...
+trying NSWG=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=T NSWG=T NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 50 out of 76
+back-tracking...
+trying QG=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=F QG=T QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 45 out of 76
+back-tracking...
+trying QR=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=F QR=T QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 39 out of 76
+back-tracking...
+trying SAB=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=F SAG=T SAB=T QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 32 out of 76
+back-tracking...
+trying SAR=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=F SAR=T SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 24 out of 76
+back-tracking...
+trying NTB=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=F NTB=T SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 18 out of 76
+back-tracking...
+trying NTG=1
+
+WAR=F WAG=F WAB=T NTR=T NTG=T NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 12 out of 76
+back-tracking...
+trying WAG=1
+
+WAR=F WAG=T WAB=? NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 7 out of 76
+trying WAB=0
+
+WAR=F WAG=T WAB=F NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 11 out of 76
+trying NTR=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 17 out of 76
+trying NTG=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 22 out of 76
+trying NTB=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=F SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 24 out of 76
+back-tracking...
+trying NTB=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 23 out of 76
+trying SAR=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=F SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 30 out of 76
+trying SAG=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=F SAG=F SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 36 out of 76
+trying SAB=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=F SAG=F SAB=F QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 40 out of 76
+back-tracking...
+trying SAB=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=F SAG=F SAB=T QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 37 out of 76
+back-tracking...
+trying SAG=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 31 out of 76
+back-tracking...
+trying SAR=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 24 out of 76
+trying SAG=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 32 out of 76
+trying SAB=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 38 out of 76
+trying QR=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 44 out of 76
+trying QG=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=F QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 47 out of 76
+trying QB=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=F QB=F NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+back-tracking...
+trying QB=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=F QB=T NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 48 out of 76
+back-tracking...
+trying QG=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 45 out of 76
+trying QB=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+trying NSWR=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 55 out of 76
+trying NSWG=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 59 out of 76
+trying NSWB=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=F VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+back-tracking...
+trying NSWB=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+trying VR=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 65 out of 76
+trying VG=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=F VB=? TR=? TG=? TB=? 
+num clauses satisfied: 67 out of 76
+trying VB=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=F VB=F TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+back-tracking...
+trying VB=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=F VB=T TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+back-tracking...
+trying VG=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=? TR=? TG=? TB=? 
+num clauses satisfied: 66 out of 76
+trying VB=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=? TG=? TB=? 
+num clauses satisfied: 69 out of 76
+trying TR=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=F TG=? TB=? 
+num clauses satisfied: 73 out of 76
+trying TG=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=F TG=F TB=? 
+num clauses satisfied: 75 out of 76
+trying TB=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=F TG=F TB=F 
+num clauses satisfied: 75 out of 76
+back-tracking...
+trying TB=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=F TG=F TB=T 
+num clauses satisfied: 76 out of 76
+trying TG=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=F TG=T TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=F TG=T TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=F TG=T TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TR=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=T TG=? TB=? 
+num clauses satisfied: 70 out of 76
+trying TG=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=T TG=F TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=T TG=F TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=T TG=F TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TG=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=F TR=T TG=T TB=? 
+num clauses satisfied: 70 out of 76
+back-tracking...
+trying VB=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=T TR=? TG=? TB=? 
+num clauses satisfied: 66 out of 76
+back-tracking...
+trying VR=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=T VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 61 out of 76
+back-tracking...
+trying NSWG=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=F NSWG=T NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 56 out of 76
+back-tracking...
+trying NSWR=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=F NSWR=T NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 50 out of 76
+back-tracking...
+trying QB=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=F QG=T QB=T NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 45 out of 76
+back-tracking...
+trying QR=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=F QR=T QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 39 out of 76
+back-tracking...
+trying SAB=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=F SAB=T QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 32 out of 76
+back-tracking...
+trying SAG=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=F NTB=T SAR=T SAG=T SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 24 out of 76
+back-tracking...
+trying NTG=1
+
+WAR=F WAG=T WAB=F NTR=F NTG=T NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 18 out of 76
+back-tracking...
+trying NTR=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 12 out of 76
+trying NTG=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 19 out of 76
+trying NTB=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 23 out of 76
+trying SAR=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 31 out of 76
+trying SAG=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 37 out of 76
+trying SAB=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=F QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 40 out of 76
+back-tracking...
+trying SAB=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 38 out of 76
+trying QR=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 44 out of 76
+trying QG=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=F QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 47 out of 76
+trying QB=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=F QB=F NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+back-tracking...
+trying QB=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=F QB=T NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 48 out of 76
+back-tracking...
+trying QG=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 45 out of 76
+trying QB=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+trying NSWR=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=F NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 54 out of 76
+trying NSWG=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=F NSWG=F NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 58 out of 76
+trying NSWB=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=F NSWG=F NSWB=F VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+back-tracking...
+trying NSWB=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=F NSWG=F NSWB=T VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 59 out of 76
+back-tracking...
+trying NSWG=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=F NSWG=T NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 55 out of 76
+back-tracking...
+trying NSWR=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 50 out of 76
+trying NSWG=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 56 out of 76
+trying NSWB=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+trying VR=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 65 out of 76
+trying VG=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=F VB=? TR=? TG=? TB=? 
+num clauses satisfied: 67 out of 76
+trying VB=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=F VB=F TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+back-tracking...
+trying VB=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=F VB=T TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+back-tracking...
+trying VG=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=? TR=? TG=? TB=? 
+num clauses satisfied: 66 out of 76
+trying VB=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=? TG=? TB=? 
+num clauses satisfied: 69 out of 76
+trying TR=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=F TG=? TB=? 
+num clauses satisfied: 73 out of 76
+trying TG=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=F TG=F TB=? 
+num clauses satisfied: 75 out of 76
+trying TB=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=F TG=F TB=F 
+num clauses satisfied: 75 out of 76
+back-tracking...
+trying TB=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=F TG=F TB=T 
+num clauses satisfied: 76 out of 76
+trying TG=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=F TG=T TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=F TG=T TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=F TG=T TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TR=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=T TG=? TB=? 
+num clauses satisfied: 70 out of 76
+trying TG=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=T TG=F TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=T TG=F TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=T TG=F TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TG=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=F TR=T TG=T TB=? 
+num clauses satisfied: 70 out of 76
+back-tracking...
+trying VB=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=F VG=T VB=T TR=? TG=? TB=? 
+num clauses satisfied: 66 out of 76
+back-tracking...
+trying VR=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=F VR=T VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 61 out of 76
+back-tracking...
+trying NSWB=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=F NSWB=T VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 56 out of 76
+back-tracking...
+trying NSWG=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=F NSWR=T NSWG=T NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 50 out of 76
+back-tracking...
+trying QB=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=T NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 45 out of 76
+back-tracking...
+trying QR=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=F SAB=T QR=T QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 39 out of 76
+back-tracking...
+trying SAG=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=F SAG=T SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 32 out of 76
+back-tracking...
+trying SAR=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=F SAR=T SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 24 out of 76
+back-tracking...
+trying NTB=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=F NTB=T SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 19 out of 76
+back-tracking...
+trying NTG=1
+
+WAR=F WAG=T WAB=F NTR=T NTG=T NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 12 out of 76
+back-tracking...
+trying WAB=1
+
+WAR=F WAG=T WAB=T NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 7 out of 76
+back-tracking...
+trying WAR=1
+
+WAR=T WAG=? WAB=? NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 1 out of 76
+trying WAG=0
+
+WAR=T WAG=F WAB=? NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 7 out of 76
+trying WAB=0
+
+WAR=T WAG=F WAB=F NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 11 out of 76
+trying NTR=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 18 out of 76
+trying NTG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 22 out of 76
+trying NTB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=F SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 24 out of 76
+back-tracking...
+trying NTB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 23 out of 76
+trying SAR=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 31 out of 76
+trying SAG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=F SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 36 out of 76
+trying SAB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=F SAB=F QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 40 out of 76
+back-tracking...
+trying SAB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=F SAB=T QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 37 out of 76
+back-tracking...
+trying SAG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 32 out of 76
+trying SAB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 38 out of 76
+trying QR=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=F QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 43 out of 76
+trying QG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=F QG=F QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 47 out of 76
+trying QB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=F QG=F QB=F NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+back-tracking...
+trying QB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=F QG=F QB=T NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 48 out of 76
+back-tracking...
+trying QG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=F QG=T QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 44 out of 76
+back-tracking...
+trying QR=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 39 out of 76
+trying QG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 45 out of 76
+trying QB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+trying NSWR=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 55 out of 76
+trying NSWG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 59 out of 76
+trying NSWB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=F VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+back-tracking...
+trying NSWB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+trying VR=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=F VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 64 out of 76
+trying VG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=F VG=F VB=? TR=? TG=? TB=? 
+num clauses satisfied: 67 out of 76
+trying VB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=F VG=F VB=F TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+back-tracking...
+trying VB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=F VG=F VB=T TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+back-tracking...
+trying VG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=F VG=T VB=? TR=? TG=? TB=? 
+num clauses satisfied: 65 out of 76
+back-tracking...
+trying VR=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 61 out of 76
+trying VG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=? TR=? TG=? TB=? 
+num clauses satisfied: 66 out of 76
+trying VB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=? TG=? TB=? 
+num clauses satisfied: 69 out of 76
+trying TR=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=F TG=? TB=? 
+num clauses satisfied: 73 out of 76
+trying TG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=F TG=F TB=? 
+num clauses satisfied: 75 out of 76
+trying TB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=F TG=F TB=F 
+num clauses satisfied: 75 out of 76
+back-tracking...
+trying TB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=F TG=F TB=T 
+num clauses satisfied: 76 out of 76
+trying TG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=F TG=T TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=F TG=T TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=F TG=T TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TR=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=T TG=? TB=? 
+num clauses satisfied: 70 out of 76
+trying TG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=T TG=F TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=T TG=F TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=T TG=F TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=F TR=T TG=T TB=? 
+num clauses satisfied: 70 out of 76
+back-tracking...
+trying VB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=F VB=T TR=? TG=? TB=? 
+num clauses satisfied: 66 out of 76
+back-tracking...
+trying VG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=T VG=T VB=? TR=? TG=? TB=? 
+num clauses satisfied: 61 out of 76
+back-tracking...
+trying NSWG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=F NSWG=T NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 56 out of 76
+back-tracking...
+trying NSWR=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=F NSWR=T NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 50 out of 76
+back-tracking...
+trying QB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=F QB=T NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 45 out of 76
+back-tracking...
+trying QG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=F QR=T QG=T QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 39 out of 76
+back-tracking...
+trying SAB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=F SAG=T SAB=T QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 32 out of 76
+back-tracking...
+trying SAR=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=F NTB=T SAR=T SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 24 out of 76
+back-tracking...
+trying NTG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 19 out of 76
+trying NTB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 23 out of 76
+trying SAR=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 31 out of 76
+trying SAG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 37 out of 76
+trying SAB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=F QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 40 out of 76
+back-tracking...
+trying SAB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 38 out of 76
+trying QR=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=F QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 43 out of 76
+trying QG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=F QG=F QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 47 out of 76
+trying QB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=F QG=F QB=F NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+back-tracking...
+trying QB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=F QG=F QB=T NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 48 out of 76
+back-tracking...
+trying QG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=F QG=T QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 44 out of 76
+back-tracking...
+trying QR=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 39 out of 76
+trying QG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 45 out of 76
+trying QB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 49 out of 76
+trying NSWR=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 55 out of 76
+trying NSWG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=F NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 58 out of 76
+trying NSWB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=F NSWB=F VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+back-tracking...
+trying NSWB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=F NSWB=T VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 59 out of 76
+back-tracking...
+trying NSWG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 56 out of 76
+trying NSWB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 60 out of 76
+trying VR=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=F VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 64 out of 76
+trying VG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=F VG=F VB=? TR=? TG=? TB=? 
+num clauses satisfied: 67 out of 76
+trying VB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=F VG=F VB=F TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+back-tracking...
+trying VB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=F VG=F VB=T TR=? TG=? TB=? 
+num clauses satisfied: 68 out of 76
+back-tracking...
+trying VG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=F VG=T VB=? TR=? TG=? TB=? 
+num clauses satisfied: 65 out of 76
+back-tracking...
+trying VR=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 61 out of 76
+trying VG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=? TR=? TG=? TB=? 
+num clauses satisfied: 66 out of 76
+trying VB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=? TG=? TB=? 
+num clauses satisfied: 69 out of 76
+trying TR=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=F TG=? TB=? 
+num clauses satisfied: 73 out of 76
+trying TG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=F TG=F TB=? 
+num clauses satisfied: 75 out of 76
+trying TB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=F TG=F TB=F 
+num clauses satisfied: 75 out of 76
+back-tracking...
+trying TB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=F TG=F TB=T 
+num clauses satisfied: 76 out of 76
+trying TG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=F TG=T TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=F TG=T TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=F TG=T TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TR=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=T TG=? TB=? 
+num clauses satisfied: 70 out of 76
+trying TG=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=T TG=F TB=? 
+num clauses satisfied: 74 out of 76
+trying TB=0
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=T TG=F TB=F 
+num clauses satisfied: 76 out of 76
+trying TB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=T TG=F TB=T 
+num clauses satisfied: 74 out of 76
+back-tracking...
+trying TG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=F TR=T TG=T TB=? 
+num clauses satisfied: 70 out of 76
+back-tracking...
+trying VB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=F VB=T TR=? TG=? TB=? 
+num clauses satisfied: 66 out of 76
+back-tracking...
+trying VG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=F VR=T VG=T VB=? TR=? TG=? TB=? 
+num clauses satisfied: 61 out of 76
+back-tracking...
+trying NSWB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=F NSWG=T NSWB=T VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 56 out of 76
+back-tracking...
+trying NSWR=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=F NSWR=T NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 50 out of 76
+back-tracking...
+trying QB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=F QB=T NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 45 out of 76
+back-tracking...
+trying QG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=F SAB=T QR=T QG=T QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 39 out of 76
+back-tracking...
+trying SAG=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=F SAG=T SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 32 out of 76
+back-tracking...
+trying SAR=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=F SAR=T SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 24 out of 76
+back-tracking...
+trying NTB=1
+
+WAR=T WAG=F WAB=F NTR=F NTG=T NTB=T SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 19 out of 76
+back-tracking...
+trying NTR=1
+
+WAR=T WAG=F WAB=F NTR=T NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 12 out of 76
+back-tracking...
+trying WAB=1
+
+WAR=T WAG=F WAB=T NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 7 out of 76
+back-tracking...
+trying WAG=1
+
+WAR=T WAG=T WAB=? NTR=? NTG=? NTB=? SAR=? SAG=? SAB=? QR=? QG=? QB=? NSWR=? NSWG=? NSWB=? VR=? VG=? VB=? TR=? TG=? TB=? 
+num clauses satisfied: 1 out of 76
+back-tracking...
+failure!
+model is unsatisfiable
