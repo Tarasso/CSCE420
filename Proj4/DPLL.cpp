@@ -68,7 +68,7 @@ Eval evalExpr(Expr* expr, MODEL* model)
   {
     if(model->find(negVar) == model->end())
       hasUnassignedVar = true;
-    if(model->at(negVar) == false)
+    else if(model->at(negVar) == false)
       isConsistent = TRUE;
   }
     
@@ -78,9 +78,15 @@ Eval evalExpr(Expr* expr, MODEL* model)
   return isConsistent;
 }
 
-unsigned int numSatClauses()
+unsigned int numSatClauses(vector<Expr*> clauses, MODEL* model)
 {
-  return 0;
+  unsigned int satClauses = 0;
+  for(Expr* ex : clauses)
+  {
+    if(evalExpr(ex, model) == TRUE)
+      satClauses++;
+  }
+  return satClauses;
 }
 
 bool containsFalseClause()
@@ -92,10 +98,10 @@ MODEL* DPLL(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
 {
   // printing documentation
   printModel(model, symbols);
-  cout << "num clauses satisfied: " << numSatClauses() << "out of " << clauses.size() << endl;
+  cout << "num clauses satisfied: " << numSatClauses(clauses, model) << "out of " << clauses.size() << endl;
   
   // if all clauses are true then return true
-  if (numSatClauses() == clauses.size())
+  if (numSatClauses(clauses, model) == clauses.size())
     return model;
   // if any single clause is false then return false
   if (containsFalseClause())
@@ -173,6 +179,32 @@ int main(int argc, char* argv[])
     cout << "consistent: " << evalExpr(s3,model) << endl;
     Expr* s4 = parse("(or QR WAG WAB)");
     cout << "consistent: " << evalExpr(s4,model) << endl;
+
+    MODEL* model1 = new MODEL();
+    model1->insert(make_pair("NSWB",false));
+    model1->insert(make_pair("NSWG",false));
+    model1->insert(make_pair("NSWR",true));
+    model1->insert(make_pair("NTB",false));
+    model1->insert(make_pair("NTG",false));
+    model1->insert(make_pair("NTR",true));
+    model1->insert(make_pair("QB",true));
+    model1->insert(make_pair("QG",false));
+    model1->insert(make_pair("QR",false));
+    model1->insert(make_pair("SAB",false));
+    model1->insert(make_pair("SAG",true));
+    model1->insert(make_pair("SAR",false));
+    model1->insert(make_pair("TB",true));
+    model1->insert(make_pair("TG",false));
+    model1->insert(make_pair("TR",false));
+    model1->insert(make_pair("VB",true));
+    model1->insert(make_pair("VG",false));
+    model1->insert(make_pair("VR",false));
+    model1->insert(make_pair("WAB",true));
+    model1->insert(make_pair("WAG",false));
+    model1->insert(make_pair("WAR",false));
+    
+
+    cout << "num clauses sat: " << numSatClauses(KB, model1) << endl;
 
     // vector<string> temp = tokenize(KB[0]->toString());
     // for(string s : temp)
