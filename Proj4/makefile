@@ -7,7 +7,7 @@ parser.o: parser.cpp parser.h
 	g++ -c -Wall -std=c++11 parser.cpp
 
 run:
-	./dpll
+	./dpll $(KB)
 
 clean:
 	rm dpll
