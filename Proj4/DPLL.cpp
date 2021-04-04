@@ -11,7 +11,7 @@ typedef unordered_map<string, bool> MODEL;
 void printModel(MODEL* model, vector<string> symbols)
 {
   cout << "model: ";
-  for(int i = 0; i < symbols.size(); i++)
+  for(unsigned int i = 0; i < symbols.size(); i++)
   {
     cout << symbols.at(i) << "=";
     if(model->find(symbols.at(i)) == model->end())
@@ -34,7 +34,7 @@ bool evalExpr(Expr* expr, MODEL* model)
   vector<string> negVars;
 
   // identify vars in expr
-  for(int i = 0; i < temp.size(); i++)
+  for(unsigned int i = 0; i < temp.size(); i++)
   {
     if(temp[i]->kind == ATOM && temp[i]->sym != "or" && temp[i]->sym != "not")
     {
@@ -49,22 +49,29 @@ bool evalExpr(Expr* expr, MODEL* model)
   }
 
   // eval expr
+  bool isConsistent = false;
 
-  
-  // expr is true
-  // expr could be true
-  // expr cant be true
-  return false;
+  // expr true if any var is true
+  for(string var : vars)
+    if(model->at(var) == true)
+      isConsistent = true;
+
+  // expr is true of any negated var is false
+  for(string negVar : negVars)
+    if(model->at(negVar) == false)
+      isConsistent = true;
+
+  return isConsistent;
 }
 
-int numSatClauses()
+unsigned int numSatClauses()
 {
-
+  return 0;
 }
 
 bool containsFalseClause()
 {
-
+  return false;
 }
 
 MODEL* DPLL(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
@@ -98,10 +105,10 @@ void getSymbols(vector<Expr*> KB)
 {
   MODEL model;
   int count = 0;
-  for(int i = 0; i < KB.size(); i++)
+  for(unsigned int i = 0; i < KB.size(); i++)
   {
     vector<string> tokens = tokenize(KB[i]->toString());
-    for(int j = 0; j < tokens.size(); j++)
+    for(unsigned int j = 0; j < tokens.size(); j++)
     {
       if(tokens[j] != "(" && tokens[j] != ")" && tokens[j] != "or" && tokens[j] != "not")
       {
@@ -143,6 +150,13 @@ int main(int argc, char* argv[])
     printModel(model, symbols);
 
     getSymbols(KB);
+
+    Expr* s1 = parse("(or WAR WAG WAB)");
+    cout << "consistent: " << evalExpr(s1,model) << endl;
+    Expr* s2 = parse("(or not(WAR) WAG WAB)");
+    cout << "consistent: " << evalExpr(s2,model) << endl;
+    Expr* s3 = parse("(or not(WAR) not(WAG) not(WAB))");
+    cout << "consistent: " << evalExpr(s3,model) << endl;
 
     // vector<string> temp = tokenize(KB[0]->toString());
     // for(string s : temp)
