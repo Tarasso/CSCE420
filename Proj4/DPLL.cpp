@@ -89,8 +89,13 @@ unsigned int numSatClauses(vector<Expr*> clauses, MODEL* model)
   return satClauses;
 }
 
-bool containsFalseClause()
+bool containsFalseClause(vector<Expr*> clauses, MODEL* model)
 {
+  for(Expr* ex : clauses)
+  {
+    if(evalExpr(ex, model) == FALSE)
+      return true;
+  }
   return false;
 }
 
@@ -104,7 +109,7 @@ MODEL* DPLL(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
   if (numSatClauses(clauses, model) == clauses.size())
     return model;
   // if any single clause is false then return false
-  if (containsFalseClause())
+  if (containsFalseClause(clauses, model))
     return nullptr;
 
   // else: (meaning nothing is false, but not everything is true yet)
@@ -140,9 +145,6 @@ void getSymbols(vector<Expr*> KB)
       }
     }
   }
-  
-
-
 }
 
 // TODO: support unit clause flag <-unit>
@@ -180,6 +182,7 @@ int main(int argc, char* argv[])
     Expr* s4 = parse("(or QR WAG WAB)");
     cout << "consistent: " << evalExpr(s4,model) << endl;
 
+
     MODEL* model1 = new MODEL();
     model1->insert(make_pair("NSWB",false));
     model1->insert(make_pair("NSWG",false));
@@ -205,6 +208,7 @@ int main(int argc, char* argv[])
     
 
     cout << "num clauses sat: " << numSatClauses(KB, model1) << endl;
+    cout << "contains false clause: " << containsFalseClause(KB, model1) << endl;
 
     // vector<string> temp = tokenize(KB[0]->toString());
     // for(string s : temp)
