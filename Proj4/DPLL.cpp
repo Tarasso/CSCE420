@@ -13,17 +13,18 @@ void printModel(MODEL* model, vector<string> symbols)
   cout << "model: ";
   for(int i = 0; i < symbols.size(); i++)
   {
-    cout << symbols[i] << "=";
-    if(model->find(symbols[i]) == model->end())
+    cout << symbols.at(i) << "=";
+    if(model->find(symbols.at(i)) == model->end())
       cout << "? ";
     else
     {
-      if (model->at(symbols[i]))
+      if (model->at(symbols.at(i)))
         cout << "T ";
       else
         cout << "F ";
     }
   }
+  cout << endl;
 }
 
 bool evalExpr(Expr* expr, MODEL* model)
@@ -61,15 +62,27 @@ int numSatClauses()
 
 }
 
-bool DPLL(vector<Expr*> clauses, vector<string>* symbols, MODEL* model)
+bool containsFalseClause()
 {
+
+}
+
+MODEL* DPLL(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
+{
+  // printing documentation
+  printModel(model, symbols);
+  cout << "num clauses satisfied: " << numSatClauses() << "out of " << clauses.size() << endl;
   
   // if all clauses are true then return true
   if (numSatClauses() == clauses.size())
-    return true;
+    return model;
   // if any single clause is false then return false
+  if (containsFalseClause())
+    return nullptr;
 
   // else: (meaning nothing is false, but not everything is true yet)
+
+
 
   // choose symbol to try P
   // remove P from symbols
@@ -78,6 +91,31 @@ bool DPLL(vector<Expr*> clauses, vector<string>* symbols, MODEL* model)
   // return DPLL(clauses, symbols, model + P=true) || DPLL(clauses, symbols, model + P=false)
   
   return nullptr;
+}
+
+// assumes that KB is written in CNF using "()"", "or", "not", and symbols only
+void getSymbols(vector<Expr*> KB)
+{
+  MODEL model;
+  int count = 0;
+  for(int i = 0; i < KB.size(); i++)
+  {
+    vector<string> tokens = tokenize(KB[i]->toString());
+    for(int j = 0; j < tokens.size(); j++)
+    {
+      if(tokens[j] != "(" && tokens[j] != ")" && tokens[j] != "or" && tokens[j] != "not")
+      {
+        if(model.find(tokens[j]) == model.end())
+        {
+          model.insert(make_pair(tokens[j],true));
+          cout << ++count << ". " << tokens[j] << endl;
+        }
+      }
+    }
+  }
+  
+
+
 }
 
 // TODO: support unit clause flag <-unit>
@@ -91,7 +129,26 @@ int main(int argc, char* argv[])
     show_kb(KB);
 
     // obtain or hardcode symbols
-    // MODEL* model = nullptr;
+    MODEL* model = new MODEL();
+    vector<string> symbols;
+    symbols.push_back("WAR");
+    symbols.push_back("WAG");
+    symbols.push_back("WAB");
+    symbols.push_back("QR");
+    symbols.push_back("QG");
+    symbols.push_back("QB");
+    model->insert(make_pair("WAR",true));
+    model->insert(make_pair("WAG",false));
+    model->insert(make_pair("WAB",false));
+    printModel(model, symbols);
+
+    getSymbols(KB);
+
+    // vector<string> temp = tokenize(KB[0]->toString());
+    // for(string s : temp)
+    //   cout << s << endl;
+
+
     // vector<string>* symbols;
     // MODEL* retModel = DPLL(KB, symbols, model);
     // if(retModel)
