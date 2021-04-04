@@ -5,8 +5,10 @@
 
 using namespace std;
 
-// MODEL contains variables and their current assignment
+// contains variables and their current assignment
 typedef unordered_map<string, bool> MODEL;
+// used to determine whether an expr is T/F or could possibly be T depending on missing var
+enum Eval { FALSE, TRUE, MAYBE};
 
 void printModel(MODEL* model, vector<string> symbols)
 {
@@ -27,7 +29,7 @@ void printModel(MODEL* model, vector<string> symbols)
   cout << endl;
 }
 
-bool evalExpr(Expr* expr, MODEL* model)
+Eval evalExpr(Expr* expr, MODEL* model)
 {
   vector<Expr*> temp = expr->sub;
   vector<string> vars;
@@ -49,17 +51,29 @@ bool evalExpr(Expr* expr, MODEL* model)
   }
 
   // eval expr
-  bool isConsistent = false;
+  Eval isConsistent = FALSE;
+  bool hasUnassignedVar = false;
 
   // expr true if any var is true
   for(string var : vars)
-    if(model->at(var) == true)
-      isConsistent = true;
-
+  {
+    if(model->find(var) == model->end())
+      hasUnassignedVar = true;
+    else if(model->at(var) == true)
+      isConsistent = TRUE;
+  }
+    
   // expr is true of any negated var is false
   for(string negVar : negVars)
+  {
+    if(model->find(negVar) == model->end())
+      hasUnassignedVar = true;
     if(model->at(negVar) == false)
-      isConsistent = true;
+      isConsistent = TRUE;
+  }
+    
+  if(isConsistent == FALSE && hasUnassignedVar)
+    isConsistent = MAYBE; // could possibly be true but is not currently
 
   return isConsistent;
 }
@@ -157,6 +171,8 @@ int main(int argc, char* argv[])
     cout << "consistent: " << evalExpr(s2,model) << endl;
     Expr* s3 = parse("(or not(WAR) not(WAG) not(WAB))");
     cout << "consistent: " << evalExpr(s3,model) << endl;
+    Expr* s4 = parse("(or QR WAG WAB)");
+    cout << "consistent: " << evalExpr(s4,model) << endl;
 
     // vector<string> temp = tokenize(KB[0]->toString());
     // for(string s : temp)
