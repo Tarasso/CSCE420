@@ -110,10 +110,10 @@ MODEL* deepCopy(MODEL* oldModel)
   return newModel;
 }
 
-pair<string, bool> identifyUnitVar(Expr* expr, vector<string> symbols, MODEL* model)
+pair<string, Eval> identifyUnitVar(Expr* expr, vector<string> symbols, MODEL* model)
 {
   if(evalExpr(expr, model) != MAYBE)
-    return make_pair("",false);
+    return make_pair("",FALSE);
   
   // cout << "clause is a maybe" << endl;
 
@@ -137,22 +137,22 @@ pair<string, bool> identifyUnitVar(Expr* expr, vector<string> symbols, MODEL* mo
   }
 
   // eval expr
-  Eval isConsistent = FALSE;
-  bool hasUnassignedVar = false;
+  // Eval isConsistent = FALSE;
+  // bool hasUnassignedVar = false;
 
   unsigned int unassignedVars = 0;
   string unitVarName = "";
-  bool unitVarValue = false;
+  Eval unitVarValue = FALSE;
 
   // identify any positive unassigned variables
   for(string var : vars)
   {
     if(model->find(var) == model->end())
     {
-      hasUnassignedVar = true;
+      // hasUnassignedVar = true;
       unassignedVars++;
       unitVarName = var;
-      unitVarValue = true;
+      unitVarValue = TRUE;
     }
   }
     
@@ -161,10 +161,10 @@ pair<string, bool> identifyUnitVar(Expr* expr, vector<string> symbols, MODEL* mo
   {
     if(model->find(negVar) == model->end())
     {
-      hasUnassignedVar = true;
+      // hasUnassignedVar = true;
       unassignedVars++;
       unitVarName = negVar;
-      unitVarValue = false;
+      unitVarValue = FALSE;
     }
   }
     
@@ -174,38 +174,35 @@ pair<string, bool> identifyUnitVar(Expr* expr, vector<string> symbols, MODEL* mo
   if(unassignedVars == 1)
     return make_pair(unitVarName, unitVarValue);
   else
-    return make_pair("",false);
+    return make_pair("",FALSE);
 }
 
-string getNextSymbol(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
+pair<string, Eval> getNextSymbol(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
 {
-  // if useUnitClause
   if(useUnitClause)
   {
-    // loop to identify unit clause
-    for(int i = 0; i < clauses.size(); i++)
+    // check each clause in KB
+    for(unsigned int i = 0; i < clauses.size(); i++)
     {
-      // check if unit clause
-      if(false)
-      {
-        ;
-      }
+      // return forced assignment
+      pair<string,Eval> ret = identifyUnitVar(clauses[i], symbols, model);
+      if(ret.first != "")
+        return ret;
     }
   }
-  // determine whether the symbol should be T/F
-  // return symbol and truth assignment
-  // if !useUnitClause or if no unit clauses exist
-  // do the below 
+  
+  // below grabs next unassigned variable
   
   for(unsigned int i = 0; i < symbols.size(); i++)
     {
       // if symbol is not current in the model
       if(model->find(symbols.at(i)) == model->end())
-        return symbols.at(i);
+        return make_pair(symbols.at(i), MAYBE);
     }
 
+  // error checking, should not get to here
   cout << "there is prob something wrong" << endl;
-  return "";
+  return make_pair("",MAYBE);
 }
 
 MODEL* DPLL(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
@@ -226,23 +223,49 @@ MODEL* DPLL(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
   }
 
   // choose symbol to try
-  string newSymbol = getNextSymbol(clauses, symbols, model);
+  // NOTE: Eval=TRUE/FALSE is "forced", Eval=MAYBE is "trying"
+  pair<string,Eval> newSymbol = getNextSymbol(clauses, symbols, model);
 
   MODEL* newModel0 = deepCopy(model);
-  newModel0->insert(make_pair(newSymbol,false));
   MODEL* newModel1 = deepCopy(model);
-  newModel1->insert(make_pair(newSymbol,true));
 
-  cout << "trying " << newSymbol << "=0" << endl << endl;
-  MODEL* ret0 = DPLL(clauses, symbols, newModel0);
+  // handles forcing variables
+  if(newSymbol.second != MAYBE)
+  {
+    if(newSymbol.second == TRUE)
+    {
+      cout << "forcing " << newSymbol.first << "=1" << endl;
+      newModel1->insert(make_pair(newSymbol.first,true));
+      return DPLL(clauses, symbols, newModel1);
+    }
+    else if (newSymbol.second == FALSE)
+    {
+      cout << "forcing " << newSymbol.first << "=0" << endl;
+      newModel0->insert(make_pair(newSymbol.first,false));
+      return DPLL(clauses, symbols, newModel0);
+    }
+    
+  }
+  // handles trying variables
+  else
+  {
+    newModel0->insert(make_pair(newSymbol.first,false));
+    newModel1->insert(make_pair(newSymbol.first,true));
 
-  if(ret0 != nullptr)
-    return ret0;
-  
-  cout << "trying " << newSymbol << "=1" << endl << endl;
-  MODEL* ret1 = DPLL(clauses, symbols, newModel1);
+    cout << "trying " << newSymbol.first << "=0" << endl << endl;
+    MODEL* ret0 = DPLL(clauses, symbols, newModel0);
 
-  return ret1;
+    if(ret0 != nullptr)
+      return ret0;
+    
+    cout << "trying " << newSymbol.first << "=1" << endl << endl;
+    MODEL* ret1 = DPLL(clauses, symbols, newModel1);
+
+    return ret1;
+  }
+
+  // shouldnt get here but to remove warning
+  return nullptr;
 }
 
 // assumes that KB is written in CNF using "()"", "or", "not", and symbols only
@@ -287,49 +310,49 @@ int main(int argc, char* argv[])
 
   try
   {
-    vector<Expr*> KB = load_kb("mapcolor.cnf");
-    vector<string> symbols = getSymbols(KB);
-    Expr* s1 = parse("(or not(WAR) not(WAG) not(WAB))");
-    MODEL* model = new MODEL();
-    model->insert(make_pair("WAR",true));
-    // model->insert(make_pair("WAG",true));
-    model->insert(make_pair("WAB",true));
-
-    pair<string, bool> ret = identifyUnitVar(s1, symbols, model);
-    if(ret.first == "")
-      cout << "no unit var" << endl;
-    else
-      cout << ret.first << "=" << ret.second << endl;
-
-    // // load KB
-    // vector<Expr*> KB = load_kb(argv[1]);
-    // // print KB
-    // show_kb(KB);
-    // cout << endl << endl;
-    // // obtain all symbols in KB
+    // vector<Expr*> KB = load_kb("mapcolor.cnf");
     // vector<string> symbols = getSymbols(KB);
-    // // begin with empty model
+    // Expr* s1 = parse("(or not(WAR) not(WAG) not(WAB))");
     // MODEL* model = new MODEL();
-    // // run DPLL
-    // MODEL* finalModel = DPLL(KB, symbols, model);
-    // // print results
-    // if(finalModel != nullptr)
-    // {
-    //   cout << "\nsuccess!" << endl;
-    //   cout << "number of DPLL calls = " << dpllCalls;
-    //   if(useUnitClause)
-    //     cout << "(WITH unit-clause heuristic)" << endl;
-    //   else
-    //     cout << "(WITHOUT unit-clause heuristic)" << endl;
+    // model->insert(make_pair("WAR",true));
+    // // model->insert(make_pair("WAG",true));
+    // model->insert(make_pair("WAB",true));
 
-    //   cout << "here is a model: " << endl;
-    //   printModel(finalModel, symbols);
-    // }
+    // pair<string, bool> ret = identifyUnitVar(s1, symbols, model);
+    // if(ret.first == "")
+    //   cout << "no unit var" << endl;
     // else
-    // {
-    //   cout << "failure!" << endl;
-    //   cout << "model is unsatisfiable" << endl;
-    // }
+    //   cout << ret.first << "=" << ret.second << endl;
+
+    // load KB
+    vector<Expr*> KB = load_kb(argv[1]);
+    // print KB
+    show_kb(KB);
+    cout << endl << endl;
+    // obtain all symbols in KB
+    vector<string> symbols = getSymbols(KB);
+    // begin with empty model
+    MODEL* model = new MODEL();
+    // run DPLL
+    MODEL* finalModel = DPLL(KB, symbols, model);
+    // print results
+    if(finalModel != nullptr)
+    {
+      cout << "\nsuccess!" << endl;
+      cout << "number of DPLL calls = " << dpllCalls;
+      if(useUnitClause)
+        cout << "(WITH unit-clause heuristic)" << endl;
+      else
+        cout << "(WITHOUT unit-clause heuristic)" << endl;
+
+      cout << "here is a model: " << endl;
+      printModel(finalModel, symbols);
+    }
+    else
+    {
+      cout << "failure!" << endl;
+      cout << "model is unsatisfiable" << endl;
+    }
 
   }
   catch(const std::exception& e)
