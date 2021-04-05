@@ -110,10 +110,88 @@ MODEL* deepCopy(MODEL* oldModel)
   return newModel;
 }
 
-string getNextSymbol(vector<string> symbols, MODEL* model)
+pair<string, bool> identifyUnitVar(Expr* expr, vector<string> symbols, MODEL* model)
+{
+  if(evalExpr(expr, model) != MAYBE)
+    return make_pair("",false);
+  
+  // cout << "clause is a maybe" << endl;
+
+  vector<Expr*> temp = expr->sub;
+  vector<string> vars;
+  vector<string> negVars;
+
+  // identify vars in expr
+  for(unsigned int i = 0; i < temp.size(); i++)
+  {
+    if(temp[i]->kind == ATOM && temp[i]->sym != "or" && temp[i]->sym != "not")
+    {
+      //cout << "detected var: " << temp[i]->toString() << endl;
+      vars.push_back(temp[i]->toString());
+    }
+    else if (temp[i]->kind == LIST)
+    {
+      //cout << "detected negated var: " << temp[i]->sub[0]->toString() << endl;
+      negVars.push_back(temp[i]->sub[0]->toString());
+    }
+  }
+
+  // eval expr
+  Eval isConsistent = FALSE;
+  bool hasUnassignedVar = false;
+
+  unsigned int unassignedVars = 0;
+  string unitVarName = "";
+  bool unitVarValue = false;
+
+  // identify any positive unassigned variables
+  for(string var : vars)
+  {
+    if(model->find(var) == model->end())
+    {
+      hasUnassignedVar = true;
+      unassignedVars++;
+      unitVarName = var;
+      unitVarValue = true;
+    }
+  }
+    
+  // identify any negative unassigned variables
+  for(string negVar : negVars)
+  {
+    if(model->find(negVar) == model->end())
+    {
+      hasUnassignedVar = true;
+      unassignedVars++;
+      unitVarName = negVar;
+      unitVarValue = false;
+    }
+  }
+    
+  // cout << unassignedVars << "degrees of freedom" << endl;
+
+  // a single unassigned var means a unit clause
+  if(unassignedVars == 1)
+    return make_pair(unitVarName, unitVarValue);
+  else
+    return make_pair("",false);
+}
+
+string getNextSymbol(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
 {
   // if useUnitClause
-  // loop to identify unit clause
+  if(useUnitClause)
+  {
+    // loop to identify unit clause
+    for(int i = 0; i < clauses.size(); i++)
+    {
+      // check if unit clause
+      if(false)
+      {
+        ;
+      }
+    }
+  }
   // determine whether the symbol should be T/F
   // return symbol and truth assignment
   // if !useUnitClause or if no unit clauses exist
@@ -148,7 +226,7 @@ MODEL* DPLL(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
   }
 
   // choose symbol to try
-  string newSymbol = getNextSymbol(symbols, model);
+  string newSymbol = getNextSymbol(clauses, symbols, model);
 
   MODEL* newModel0 = deepCopy(model);
   newModel0->insert(make_pair(newSymbol,false));
@@ -209,35 +287,49 @@ int main(int argc, char* argv[])
 
   try
   {
-    // load KB
-    vector<Expr*> KB = load_kb(argv[1]);
-    // print KB
-    show_kb(KB);
-    cout << endl << endl;
-    // obtain all symbols in KB
+    vector<Expr*> KB = load_kb("mapcolor.cnf");
     vector<string> symbols = getSymbols(KB);
-    // begin with empty model
+    Expr* s1 = parse("(or not(WAR) not(WAG) not(WAB))");
     MODEL* model = new MODEL();
-    // run DPLL
-    MODEL* finalModel = DPLL(KB, symbols, model);
-    // print results
-    if(finalModel != nullptr)
-    {
-      cout << "\nsuccess!" << endl;
-      cout << "number of DPLL calls = " << dpllCalls;
-      if(useUnitClause)
-        cout << "(WITH unit-clause heuristic)" << endl;
-      else
-        cout << "(WITHOUT unit-clause heuristic)" << endl;
+    model->insert(make_pair("WAR",true));
+    // model->insert(make_pair("WAG",true));
+    model->insert(make_pair("WAB",true));
 
-      cout << "here is a model: " << endl;
-      printModel(finalModel, symbols);
-    }
+    pair<string, bool> ret = identifyUnitVar(s1, symbols, model);
+    if(ret.first == "")
+      cout << "no unit var" << endl;
     else
-    {
-      cout << "failure!" << endl;
-      cout << "model is unsatisfiable" << endl;
-    }
+      cout << ret.first << "=" << ret.second << endl;
+
+    // // load KB
+    // vector<Expr*> KB = load_kb(argv[1]);
+    // // print KB
+    // show_kb(KB);
+    // cout << endl << endl;
+    // // obtain all symbols in KB
+    // vector<string> symbols = getSymbols(KB);
+    // // begin with empty model
+    // MODEL* model = new MODEL();
+    // // run DPLL
+    // MODEL* finalModel = DPLL(KB, symbols, model);
+    // // print results
+    // if(finalModel != nullptr)
+    // {
+    //   cout << "\nsuccess!" << endl;
+    //   cout << "number of DPLL calls = " << dpllCalls;
+    //   if(useUnitClause)
+    //     cout << "(WITH unit-clause heuristic)" << endl;
+    //   else
+    //     cout << "(WITHOUT unit-clause heuristic)" << endl;
+
+    //   cout << "here is a model: " << endl;
+    //   printModel(finalModel, symbols);
+    // }
+    // else
+    // {
+    //   cout << "failure!" << endl;
+    //   cout << "model is unsatisfiable" << endl;
+    // }
 
   }
   catch(const std::exception& e)
