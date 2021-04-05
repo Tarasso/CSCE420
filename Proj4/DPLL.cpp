@@ -112,6 +112,13 @@ MODEL* deepCopy(MODEL* oldModel)
 
 string getNextSymbol(vector<string> symbols, MODEL* model)
 {
+  // if useUnitClause
+  // loop to identify unit clause
+  // determine whether the symbol should be T/F
+  // return symbol and truth assignment
+  // if !useUnitClause or if no unit clauses exist
+  // do the below 
+  
   for(unsigned int i = 0; i < symbols.size(); i++)
     {
       // if symbol is not current in the model
@@ -231,79 +238,6 @@ int main(int argc, char* argv[])
       cout << "failure!" << endl;
       cout << "model is unsatisfiable" << endl;
     }
-
-
-    // obtain or hardcode symbols
-    // MODEL* model = new MODEL();
-    // vector<string> symbols;
-    // symbols.push_back("WAR");
-    // symbols.push_back("WAG");
-    // symbols.push_back("WAB");
-    // symbols.push_back("QR");
-    // symbols.push_back("QG");
-    // symbols.push_back("QB");
-    // model->insert(make_pair("WAR",true));
-    // model->insert(make_pair("WAG",false));
-    // model->insert(make_pair("WAB",false));
-    // printModel(model, symbols);
-
-    
-
-    // Expr* s1 = parse("(or WAR WAG WAB)");
-    // cout << "consistent: " << evalExpr(s1,model) << endl;
-    // Expr* s2 = parse("(or not(WAR) WAG WAB)");
-    // cout << "consistent: " << evalExpr(s2,model) << endl;
-    // Expr* s3 = parse("(or not(WAR) not(WAG) not(WAB))");
-    // cout << "consistent: " << evalExpr(s3,model) << endl;
-    // Expr* s4 = parse("(or QR WAG WAB)");
-    // cout << "consistent: " << evalExpr(s4,model) << endl;
-
-
-    // MODEL* model1 = new MODEL();
-    // model1->insert(make_pair("NSWB",false));
-    // model1->insert(make_pair("NSWG",false));
-    // model1->insert(make_pair("NSWR",true));
-    // model1->insert(make_pair("NTB",false));
-    // model1->insert(make_pair("NTG",false));
-    // model1->insert(make_pair("NTR",true));
-    // model1->insert(make_pair("QB",true));
-    // model1->insert(make_pair("QG",false));
-    // model1->insert(make_pair("QR",false));
-    // model1->insert(make_pair("SAB",false));
-    // model1->insert(make_pair("SAG",true));
-    // model1->insert(make_pair("SAR",false));
-    // model1->insert(make_pair("TB",true));
-    // model1->insert(make_pair("TG",false));
-    // model1->insert(make_pair("TR",false));
-    // model1->insert(make_pair("VB",true));
-    // model1->insert(make_pair("VG",false));
-    // model1->insert(make_pair("VR",false));
-    // model1->insert(make_pair("WAB",true));
-    // model1->insert(make_pair("WAG",false));
-    // model1->insert(make_pair("WAR",false));
-    
-
-    // cout << "num clauses sat: " << numSatClauses(KB, model1) << endl;
-    // cout << "contains false clause: " << containsFalseClause(KB, model1) << endl;
-
-    // vector<string> temp = tokenize(KB[0]->toString());
-    // for(string s : temp)
-    //   cout << s << endl;
-
-
-    // vector<string>* symbols;
-    // MODEL* retModel = DPLL(KB, symbols, model);
-    // if(retModel)
-    // {
-    //   cout << "model found!" << endl;
-    // }
-    // else
-    // {
-    //   cout << "no valid model found!" << endl;
-    // }
-
-    
-
 
   }
   catch(const std::exception& e)
