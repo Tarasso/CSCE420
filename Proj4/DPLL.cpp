@@ -149,11 +149,15 @@ MODEL* DPLL(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
   newModel1->insert(make_pair(newSymbol,true));
 
   cout << "trying " << newSymbol << "=0" << endl << endl;
-  DPLL(clauses, symbols, newModel0);
-  cout << "trying " << newSymbol << "=1" << endl << endl;
-  DPLL(clauses, symbols, newModel1);
+  MODEL* ret0 = DPLL(clauses, symbols, newModel0);
 
-  return nullptr;
+  if(ret0 != nullptr)
+    return ret0;
+  
+  cout << "trying " << newSymbol << "=1" << endl << endl;
+  MODEL* ret1 = DPLL(clauses, symbols, newModel1);
+
+  return ret1;
 }
 
 // assumes that KB is written in CNF using "()"", "or", "not", and symbols only
@@ -212,7 +216,7 @@ int main(int argc, char* argv[])
     // print results
     if(finalModel != nullptr)
     {
-      cout << "success!" << endl;
+      cout << "\nsuccess!" << endl;
       cout << "number of DPLL calls = " << dpllCalls;
       if(useUnitClause)
         cout << "(WITH unit-clause heuristic)" << endl;
