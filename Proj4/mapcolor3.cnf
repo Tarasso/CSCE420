@@ -77,3 +77,7 @@
 (or not(NSWR) not (VR))
 (or not(NSWG) not (VG))
 (or not(NSWB) not (VB))
+# force queensland to be green
+(or QG)
+# force inconsistency by forcing victoria to be blue
+(or VB)

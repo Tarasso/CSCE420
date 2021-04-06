@@ -234,13 +234,13 @@ MODEL* DPLL(vector<Expr*> clauses, vector<string> symbols, MODEL* model)
   {
     if(newSymbol.second == TRUE)
     {
-      cout << "forcing " << newSymbol.first << "=1" << endl;
+      cout << "forcing " << newSymbol.first << "=1" << endl << endl;
       newModel1->insert(make_pair(newSymbol.first,true));
       return DPLL(clauses, symbols, newModel1);
     }
     else if (newSymbol.second == FALSE)
     {
-      cout << "forcing " << newSymbol.first << "=0" << endl;
+      cout << "forcing " << newSymbol.first << "=0" << endl << endl;
       newModel0->insert(make_pair(newSymbol.first,false));
       return DPLL(clauses, symbols, newModel0);
     }
@@ -310,20 +310,6 @@ int main(int argc, char* argv[])
 
   try
   {
-    // vector<Expr*> KB = load_kb("mapcolor.cnf");
-    // vector<string> symbols = getSymbols(KB);
-    // Expr* s1 = parse("(or not(WAR) not(WAG) not(WAB))");
-    // MODEL* model = new MODEL();
-    // model->insert(make_pair("WAR",true));
-    // // model->insert(make_pair("WAG",true));
-    // model->insert(make_pair("WAB",true));
-
-    // pair<string, bool> ret = identifyUnitVar(s1, symbols, model);
-    // if(ret.first == "")
-    //   cout << "no unit var" << endl;
-    // else
-    //   cout << ret.first << "=" << ret.second << endl;
-
     // load KB
     vector<Expr*> KB = load_kb(argv[1]);
     // print KB
@@ -351,7 +337,9 @@ int main(int argc, char* argv[])
     else
     {
       cout << "failure!" << endl;
+      cout << "number of DPLL calls = " << dpllCalls << endl;
       cout << "model is unsatisfiable" << endl;
+      
     }
 
   }

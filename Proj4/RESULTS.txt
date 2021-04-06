@@ -1,0 +1,76 @@
+Map Coloring Problem
+
+- Normal KB
+    - KB: mapcolor.cnf
+    - With Unit clause
+        - transcript: DPLL_mapcolor.txt
+        - Success
+        - 22 DPLL calls
+        - Resulting model:
+            WA: Blue
+            NT: Green
+            SA: Red
+            Q: Blue
+            NSW: Green
+            V: Blue
+            T: Blue
+    - Without Unit clause
+        - transcript: DPLL_mapcolor_without_UCH.txt
+        - Success
+        - 37 DPLL calls
+        - Resulting model:
+            WA: Blue
+            NT: Green
+            SA: Red
+            Q: Blue
+            NSW: Green
+            V: Blue
+            T: Blue
+
+- Forcing QG
+    - KB: mapcolor2.cnf
+    - With Unit clause
+        - transcript: DPLL_mapcolor2.txt
+        - Success
+        - 28 DPLL calls
+        - Resulting model:
+            WA: Green
+            NT: Blue
+            SA: Red
+            Q: Green
+            NSW: Blue
+            V: Green
+            T: Blue
+    - Without Unit clause
+        - transcript: DPLL_mapcolor2_without_UCH.txt
+        - Success
+        - 75 DPLL calls
+        - Resulting model:
+            WA: Green
+            NT: Blue
+            SA: Red
+            Q: Green
+            NSW: Blue
+            V: Green
+            T: Blue
+
+
+- Forcing QG & VB
+    - KB: mapcolor3.cnf
+    - With Unit clause
+        - transcript: DPLL_mapcolor3.txt
+        - Unsatisfiable
+        - 19 DPLL calls
+    - Without Unit clause
+        - transcript: DPLL_mapcolor3_without_UCH.txt
+        - Unsatisfiable
+        - 155 DPLL calls
+
+6queens
+
+- KB:
+    - With Unit clause
+        - transcript:
+        - Success
+        - XX DPLL calls
+        - Resulting model:
