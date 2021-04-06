@@ -68,9 +68,27 @@ Map Coloring Problem
 
 6queens
 
-- KB:
+- KB: 6queens.cnf
     - With Unit clause
-        - transcript:
+        - transcript: DPLL_6queens.txt
         - Success
-        - XX DPLL calls
-        - Resulting model:
+        - 132 DPLL calls
+        - Resulting model: Q51 Q32 Q13 Q64 Q45 Q26
+            .  .  .  .  Q  .
+            .  .  Q  .  .  .
+            Q  .  .  .  .  .
+            .  .  .  .  .  Q
+            .  .  .  Q  .  .
+            .  Q  .  .  .  .
+    - Without Unit clause
+        - transcript: DPLL_6queens_without_UCH.txt
+        - Success
+        - 459 DPLL calls
+        - Resulting model: Q51 Q32 Q13 Q64 Q45 Q26
+            .  .  .  .  Q  .
+            .  .  Q  .  .  .
+            Q  .  .  .  .  .
+            .  .  .  .  .  Q
+            .  .  .  Q  .  .
+            .  Q  .  .  .  .
+    

@@ -1,5 +1,5 @@
-
-queens = 6
+# change queens to any positive int n > 0
+queens = 15
 
 filename = str(queens) + "queens.cnf"
 file = open(filename,'w')
@@ -36,27 +36,20 @@ for i in range(1,queens+1): # col
             queen2 = "Q" + str(i) + str(k)
             file.write("(or not(" + queen1 + ") not(" + queen2 + "))\n")
 
-thisdict = {}
+completed = []
 
 file.write("# no two in same diag\n")
-# for i in range(1,queens+1): # col
-#     for j in range(i,queens+1):  # row
-#         queen1 = "Q" + str(i) + str(j)
+for i in range(1,queens+1): # col
+    for j in range(1,queens+1):  # row
+        queen1 = "Q" + str(i) + str(j)
         # file.write(queen1+"\n")
-        # for i1 in range(1,queens+1): # col
-        #     for j1 in range(1,queens+1):  # row
-        #         queen2 = "Q" + str(i1) + str(j1)
-        #         if(abs(i-i1) == abs(j-j1) and queen1 != queen2):
-        #             file.write(queen1 + " " + queen2 + "\n")
+        for i1 in range(1,queens+1): # col
+            for j1 in range(1,queens+1):  # row
+                queen2 = "Q" + str(i1) + str(j1)
+                if(abs(i-i1) == abs(j-j1) and queen1 != queen2):
+                    if(queen1+queen2 not in completed and queen2+queen1 not in completed):
+                        file.write("(or not(" + queen1 + ") not(" + queen2 + "))\n")
+                        completed.append(queen1+queen2)
+                        completed.append(queen2+queen1)
 
 file.close()
-
-# file.write("# no two in same diag\n")
-# for i in range(1,queens+1): # col
-#     for j in range(1,queens+1):  # row
-#         queen1 = "Q" + str(i) + str(j)
-#         for i1 in range(1,queens+1): # col
-#             for j1 in range(1,queens+1):  # row
-#                 queen2 = "Q" + str(i1) + str(j1)
-#                 if(abs(i-i1) == abs(j-j1) and queen1 != queen2):
-#                     file.write(queen1 + " " + queen2 + "\n")

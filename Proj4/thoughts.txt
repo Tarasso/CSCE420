@@ -42,12 +42,12 @@ or( not(a) not(b)) or( not(a) not(c)) ...
 
 // ------------------------------------------------------
 
-Q11 Q21 Q31 Q41
-Q12 Q22 Q32 Q42
-Q13 Q23 Q33 Q43
-Q14 Q24 Q34 Q44
-                ...
-                    Q66
+Q11 Q21 Q31 Q41 Q51 Q61
+Q12 Q22 Q32 Q42 Q52 Q62
+Q13 Q23 Q33 Q43 Q53 Q63
+Q14 Q24 Q34 Q44 Q54 Q64
+Q15 Q25 Q35 Q45 Q55 Q65
+Q16 Q26 Q36 Q46 Q56 Q66
 
 // at least one in each row
 Q11 v Q21 v Q31 v Q41 v ...
@@ -69,3 +69,11 @@ becomes
 
 
 // no two in same diag
+
+
+.  .  .  .  Q  .
+.  .  Q  .  .  .
+Q  .  .  .  .  .
+.  .  .  .  .  Q
+.  .  .  Q  .  .
+.  Q  .  .  .  .

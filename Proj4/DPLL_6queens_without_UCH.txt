@@ -1,0 +1,2357 @@
+0. (or Q11 Q21 Q31 Q41 Q51 Q61)
+1. (or Q12 Q22 Q32 Q42 Q52 Q62)
+2. (or Q13 Q23 Q33 Q43 Q53 Q63)
+3. (or Q14 Q24 Q34 Q44 Q54 Q64)
+4. (or Q15 Q25 Q35 Q45 Q55 Q65)
+5. (or Q16 Q26 Q36 Q46 Q56 Q66)
+6. (or Q11 Q12 Q13 Q14 Q15 Q16)
+7. (or Q21 Q22 Q23 Q24 Q25 Q26)
+8. (or Q31 Q32 Q33 Q34 Q35 Q36)
+9. (or Q41 Q42 Q43 Q44 Q45 Q46)
+10. (or Q51 Q52 Q53 Q54 Q55 Q56)
+11. (or Q61 Q62 Q63 Q64 Q65 Q66)
+12. (or not (Q11) not (Q21))
+13. (or not (Q11) not (Q31))
+14. (or not (Q11) not (Q41))
+15. (or not (Q11) not (Q51))
+16. (or not (Q11) not (Q61))
+17. (or not (Q21) not (Q31))
+18. (or not (Q21) not (Q41))
+19. (or not (Q21) not (Q51))
+20. (or not (Q21) not (Q61))
+21. (or not (Q31) not (Q41))
+22. (or not (Q31) not (Q51))
+23. (or not (Q31) not (Q61))
+24. (or not (Q41) not (Q51))
+25. (or not (Q41) not (Q61))
+26. (or not (Q51) not (Q61))
+27. (or not (Q12) not (Q22))
+28. (or not (Q12) not (Q32))
+29. (or not (Q12) not (Q42))
+30. (or not (Q12) not (Q52))
+31. (or not (Q12) not (Q62))
+32. (or not (Q22) not (Q32))
+33. (or not (Q22) not (Q42))
+34. (or not (Q22) not (Q52))
+35. (or not (Q22) not (Q62))
+36. (or not (Q32) not (Q42))
+37. (or not (Q32) not (Q52))
+38. (or not (Q32) not (Q62))
+39. (or not (Q42) not (Q52))
+40. (or not (Q42) not (Q62))
+41. (or not (Q52) not (Q62))
+42. (or not (Q13) not (Q23))
+43. (or not (Q13) not (Q33))
+44. (or not (Q13) not (Q43))
+45. (or not (Q13) not (Q53))
+46. (or not (Q13) not (Q63))
+47. (or not (Q23) not (Q33))
+48. (or not (Q23) not (Q43))
+49. (or not (Q23) not (Q53))
+50. (or not (Q23) not (Q63))
+51. (or not (Q33) not (Q43))
+52. (or not (Q33) not (Q53))
+53. (or not (Q33) not (Q63))
+54. (or not (Q43) not (Q53))
+55. (or not (Q43) not (Q63))
+56. (or not (Q53) not (Q63))
+57. (or not (Q14) not (Q24))
+58. (or not (Q14) not (Q34))
+59. (or not (Q14) not (Q44))
+60. (or not (Q14) not (Q54))
+61. (or not (Q14) not (Q64))
+62. (or not (Q24) not (Q34))
+63. (or not (Q24) not (Q44))
+64. (or not (Q24) not (Q54))
+65. (or not (Q24) not (Q64))
+66. (or not (Q34) not (Q44))
+67. (or not (Q34) not (Q54))
+68. (or not (Q34) not (Q64))
+69. (or not (Q44) not (Q54))
+70. (or not (Q44) not (Q64))
+71. (or not (Q54) not (Q64))
+72. (or not (Q15) not (Q25))
+73. (or not (Q15) not (Q35))
+74. (or not (Q15) not (Q45))
+75. (or not (Q15) not (Q55))
+76. (or not (Q15) not (Q65))
+77. (or not (Q25) not (Q35))
+78. (or not (Q25) not (Q45))
+79. (or not (Q25) not (Q55))
+80. (or not (Q25) not (Q65))
+81. (or not (Q35) not (Q45))
+82. (or not (Q35) not (Q55))
+83. (or not (Q35) not (Q65))
+84. (or not (Q45) not (Q55))
+85. (or not (Q45) not (Q65))
+86. (or not (Q55) not (Q65))
+87. (or not (Q16) not (Q26))
+88. (or not (Q16) not (Q36))
+89. (or not (Q16) not (Q46))
+90. (or not (Q16) not (Q56))
+91. (or not (Q16) not (Q66))
+92. (or not (Q26) not (Q36))
+93. (or not (Q26) not (Q46))
+94. (or not (Q26) not (Q56))
+95. (or not (Q26) not (Q66))
+96. (or not (Q36) not (Q46))
+97. (or not (Q36) not (Q56))
+98. (or not (Q36) not (Q66))
+99. (or not (Q46) not (Q56))
+100. (or not (Q46) not (Q66))
+101. (or not (Q56) not (Q66))
+102. (or not (Q11) not (Q12))
+103. (or not (Q11) not (Q13))
+104. (or not (Q11) not (Q14))
+105. (or not (Q11) not (Q15))
+106. (or not (Q11) not (Q16))
+107. (or not (Q12) not (Q13))
+108. (or not (Q12) not (Q14))
+109. (or not (Q12) not (Q15))
+110. (or not (Q12) not (Q16))
+111. (or not (Q13) not (Q14))
+112. (or not (Q13) not (Q15))
+113. (or not (Q13) not (Q16))
+114. (or not (Q14) not (Q15))
+115. (or not (Q14) not (Q16))
+116. (or not (Q15) not (Q16))
+117. (or not (Q21) not (Q22))
+118. (or not (Q21) not (Q23))
+119. (or not (Q21) not (Q24))
+120. (or not (Q21) not (Q25))
+121. (or not (Q21) not (Q26))
+122. (or not (Q22) not (Q23))
+123. (or not (Q22) not (Q24))
+124. (or not (Q22) not (Q25))
+125. (or not (Q22) not (Q26))
+126. (or not (Q23) not (Q24))
+127. (or not (Q23) not (Q25))
+128. (or not (Q23) not (Q26))
+129. (or not (Q24) not (Q25))
+130. (or not (Q24) not (Q26))
+131. (or not (Q25) not (Q26))
+132. (or not (Q31) not (Q32))
+133. (or not (Q31) not (Q33))
+134. (or not (Q31) not (Q34))
+135. (or not (Q31) not (Q35))
+136. (or not (Q31) not (Q36))
+137. (or not (Q32) not (Q33))
+138. (or not (Q32) not (Q34))
+139. (or not (Q32) not (Q35))
+140. (or not (Q32) not (Q36))
+141. (or not (Q33) not (Q34))
+142. (or not (Q33) not (Q35))
+143. (or not (Q33) not (Q36))
+144. (or not (Q34) not (Q35))
+145. (or not (Q34) not (Q36))
+146. (or not (Q35) not (Q36))
+147. (or not (Q41) not (Q42))
+148. (or not (Q41) not (Q43))
+149. (or not (Q41) not (Q44))
+150. (or not (Q41) not (Q45))
+151. (or not (Q41) not (Q46))
+152. (or not (Q42) not (Q43))
+153. (or not (Q42) not (Q44))
+154. (or not (Q42) not (Q45))
+155. (or not (Q42) not (Q46))
+156. (or not (Q43) not (Q44))
+157. (or not (Q43) not (Q45))
+158. (or not (Q43) not (Q46))
+159. (or not (Q44) not (Q45))
+160. (or not (Q44) not (Q46))
+161. (or not (Q45) not (Q46))
+162. (or not (Q51) not (Q52))
+163. (or not (Q51) not (Q53))
+164. (or not (Q51) not (Q54))
+165. (or not (Q51) not (Q55))
+166. (or not (Q51) not (Q56))
+167. (or not (Q52) not (Q53))
+168. (or not (Q52) not (Q54))
+169. (or not (Q52) not (Q55))
+170. (or not (Q52) not (Q56))
+171. (or not (Q53) not (Q54))
+172. (or not (Q53) not (Q55))
+173. (or not (Q53) not (Q56))
+174. (or not (Q54) not (Q55))
+175. (or not (Q54) not (Q56))
+176. (or not (Q55) not (Q56))
+177. (or not (Q61) not (Q62))
+178. (or not (Q61) not (Q63))
+179. (or not (Q61) not (Q64))
+180. (or not (Q61) not (Q65))
+181. (or not (Q61) not (Q66))
+182. (or not (Q62) not (Q63))
+183. (or not (Q62) not (Q64))
+184. (or not (Q62) not (Q65))
+185. (or not (Q62) not (Q66))
+186. (or not (Q63) not (Q64))
+187. (or not (Q63) not (Q65))
+188. (or not (Q63) not (Q66))
+189. (or not (Q64) not (Q65))
+190. (or not (Q64) not (Q66))
+191. (or not (Q65) not (Q66))
+192. (or not (Q11) not (Q22))
+193. (or not (Q11) not (Q33))
+194. (or not (Q11) not (Q44))
+195. (or not (Q11) not (Q55))
+196. (or not (Q11) not (Q66))
+197. (or not (Q12) not (Q21))
+198. (or not (Q12) not (Q23))
+199. (or not (Q12) not (Q34))
+200. (or not (Q12) not (Q45))
+201. (or not (Q12) not (Q56))
+202. (or not (Q13) not (Q22))
+203. (or not (Q13) not (Q24))
+204. (or not (Q13) not (Q31))
+205. (or not (Q13) not (Q35))
+206. (or not (Q13) not (Q46))
+207. (or not (Q14) not (Q23))
+208. (or not (Q14) not (Q25))
+209. (or not (Q14) not (Q32))
+210. (or not (Q14) not (Q36))
+211. (or not (Q14) not (Q41))
+212. (or not (Q15) not (Q24))
+213. (or not (Q15) not (Q26))
+214. (or not (Q15) not (Q33))
+215. (or not (Q15) not (Q42))
+216. (or not (Q15) not (Q51))
+217. (or not (Q16) not (Q25))
+218. (or not (Q16) not (Q34))
+219. (or not (Q16) not (Q43))
+220. (or not (Q16) not (Q52))
+221. (or not (Q16) not (Q61))
+222. (or not (Q21) not (Q32))
+223. (or not (Q21) not (Q43))
+224. (or not (Q21) not (Q54))
+225. (or not (Q21) not (Q65))
+226. (or not (Q22) not (Q31))
+227. (or not (Q22) not (Q33))
+228. (or not (Q22) not (Q44))
+229. (or not (Q22) not (Q55))
+230. (or not (Q22) not (Q66))
+231. (or not (Q23) not (Q32))
+232. (or not (Q23) not (Q34))
+233. (or not (Q23) not (Q41))
+234. (or not (Q23) not (Q45))
+235. (or not (Q23) not (Q56))
+236. (or not (Q24) not (Q33))
+237. (or not (Q24) not (Q35))
+238. (or not (Q24) not (Q42))
+239. (or not (Q24) not (Q46))
+240. (or not (Q24) not (Q51))
+241. (or not (Q25) not (Q34))
+242. (or not (Q25) not (Q36))
+243. (or not (Q25) not (Q43))
+244. (or not (Q25) not (Q52))
+245. (or not (Q25) not (Q61))
+246. (or not (Q26) not (Q35))
+247. (or not (Q26) not (Q44))
+248. (or not (Q26) not (Q53))
+249. (or not (Q26) not (Q62))
+250. (or not (Q31) not (Q42))
+251. (or not (Q31) not (Q53))
+252. (or not (Q31) not (Q64))
+253. (or not (Q32) not (Q41))
+254. (or not (Q32) not (Q43))
+255. (or not (Q32) not (Q54))
+256. (or not (Q32) not (Q65))
+257. (or not (Q33) not (Q42))
+258. (or not (Q33) not (Q44))
+259. (or not (Q33) not (Q51))
+260. (or not (Q33) not (Q55))
+261. (or not (Q33) not (Q66))
+262. (or not (Q34) not (Q43))
+263. (or not (Q34) not (Q45))
+264. (or not (Q34) not (Q52))
+265. (or not (Q34) not (Q56))
+266. (or not (Q34) not (Q61))
+267. (or not (Q35) not (Q44))
+268. (or not (Q35) not (Q46))
+269. (or not (Q35) not (Q53))
+270. (or not (Q35) not (Q62))
+271. (or not (Q36) not (Q45))
+272. (or not (Q36) not (Q54))
+273. (or not (Q36) not (Q63))
+274. (or not (Q41) not (Q52))
+275. (or not (Q41) not (Q63))
+276. (or not (Q42) not (Q51))
+277. (or not (Q42) not (Q53))
+278. (or not (Q42) not (Q64))
+279. (or not (Q43) not (Q52))
+280. (or not (Q43) not (Q54))
+281. (or not (Q43) not (Q61))
+282. (or not (Q43) not (Q65))
+283. (or not (Q44) not (Q53))
+284. (or not (Q44) not (Q55))
+285. (or not (Q44) not (Q62))
+286. (or not (Q44) not (Q66))
+287. (or not (Q45) not (Q54))
+288. (or not (Q45) not (Q56))
+289. (or not (Q45) not (Q63))
+290. (or not (Q46) not (Q55))
+291. (or not (Q46) not (Q64))
+292. (or not (Q51) not (Q62))
+293. (or not (Q52) not (Q61))
+294. (or not (Q52) not (Q63))
+295. (or not (Q53) not (Q62))
+296. (or not (Q53) not (Q64))
+297. (or not (Q54) not (Q63))
+298. (or not (Q54) not (Q65))
+299. (or not (Q55) not (Q64))
+300. (or not (Q55) not (Q66))
+301. (or not (Q56) not (Q65))
+
+
+Q11=? Q21=? Q31=? Q41=? Q51=? Q61=? Q12=? Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 0 out of 302
+trying Q11=0
+
+Q11=F Q21=? Q31=? Q41=? Q51=? Q61=? Q12=? Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 15 out of 302
+trying Q21=0
+
+Q11=F Q21=F Q31=? Q41=? Q51=? Q61=? Q12=? Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 29 out of 302
+trying Q31=0
+
+Q11=F Q21=F Q31=F Q41=? Q51=? Q61=? Q12=? Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 42 out of 302
+trying Q41=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=? Q61=? Q12=? Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 54 out of 302
+trying Q51=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=? Q12=? Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 65 out of 302
+trying Q61=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=F Q12=? Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 75 out of 302
+back-tracking...
+trying Q61=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=? Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 67 out of 302
+trying Q12=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 80 out of 302
+trying Q22=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 93 out of 302
+trying Q32=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 105 out of 302
+trying Q42=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=F Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 116 out of 302
+trying Q52=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=F Q52=F Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 127 out of 302
+trying Q62=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=F Q52=F Q62=F Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 136 out of 302
+back-tracking...
+trying Q62=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=F Q52=F Q62=T Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 128 out of 302
+back-tracking...
+trying Q52=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=F Q52=T Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 118 out of 302
+back-tracking...
+trying Q42=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 107 out of 302
+trying Q52=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 119 out of 302
+trying Q62=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 129 out of 302
+trying Q13=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 140 out of 302
+trying Q23=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=F Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 151 out of 302
+trying Q33=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=F Q33=F Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 163 out of 302
+trying Q43=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 175 out of 302
+trying Q53=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 184 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 191 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 185 out of 302
+back-tracking...
+trying Q53=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 177 out of 302
+back-tracking...
+trying Q43=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=F Q33=F Q43=T Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 164 out of 302
+back-tracking...
+trying Q33=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=F Q33=T Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 153 out of 302
+back-tracking...
+trying Q23=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 142 out of 302
+trying Q33=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 155 out of 302
+trying Q43=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 168 out of 302
+trying Q53=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 178 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 186 out of 302
+trying Q14=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 196 out of 302
+trying Q24=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 207 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 218 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 227 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 233 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 239 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 234 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 229 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 236 out of 302
+trying Q15=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 244 out of 302
+trying Q25=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 253 out of 302
+trying Q35=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 259 out of 302
+trying Q45=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 267 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 272 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 276 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 273 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 268 out of 302
+back-tracking...
+trying Q45=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=T Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 260 out of 302
+back-tracking...
+trying Q35=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=T Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 255 out of 302
+trying Q45=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=T Q45=F Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 264 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=T Q45=F Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 270 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=T Q45=F Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 275 out of 302
+trying Q16=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=T Q45=F Q55=F Q65=F Q16=F Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 281 out of 302
+back-tracking...
+trying Q16=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=T Q45=F Q55=F Q65=F Q16=T Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 277 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=T Q45=F Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 270 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=T Q45=F Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 264 out of 302
+back-tracking...
+trying Q45=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=T Q45=T Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 255 out of 302
+back-tracking...
+trying Q25=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=T Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 245 out of 302
+back-tracking...
+trying Q15=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=T Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 238 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 229 out of 302
+back-tracking...
+trying Q44=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 219 out of 302
+back-tracking...
+trying Q34=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=T Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 209 out of 302
+back-tracking...
+trying Q24=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=F Q24=T Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 197 out of 302
+back-tracking...
+trying Q14=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=F Q14=T Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 188 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=F Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 178 out of 302
+back-tracking...
+trying Q53=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=F Q53=T Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 169 out of 302
+back-tracking...
+trying Q43=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=F Q43=T Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 155 out of 302
+back-tracking...
+trying Q33=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=F Q23=T Q33=T Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 143 out of 302
+back-tracking...
+trying Q13=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 131 out of 302
+trying Q23=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 143 out of 302
+trying Q33=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 156 out of 302
+trying Q43=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 169 out of 302
+trying Q53=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 179 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 187 out of 302
+trying Q14=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 197 out of 302
+trying Q24=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 208 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 218 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 227 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 233 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 239 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 234 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 229 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 236 out of 302
+trying Q15=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 245 out of 302
+trying Q25=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 253 out of 302
+trying Q35=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 260 out of 302
+trying Q45=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 267 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 272 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 276 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 273 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 268 out of 302
+back-tracking...
+trying Q45=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=T Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 261 out of 302
+back-tracking...
+trying Q35=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=T Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 255 out of 302
+back-tracking...
+trying Q25=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=T Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 247 out of 302
+back-tracking...
+trying Q15=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=T Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 237 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 229 out of 302
+back-tracking...
+trying Q44=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 219 out of 302
+back-tracking...
+trying Q34=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=T Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 210 out of 302
+back-tracking...
+trying Q24=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=T Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 199 out of 302
+back-tracking...
+trying Q14=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=T Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 188 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 179 out of 302
+back-tracking...
+trying Q53=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=T Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 170 out of 302
+back-tracking...
+trying Q43=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=F Q43=T Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 156 out of 302
+back-tracking...
+trying Q33=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=F Q33=T Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 144 out of 302
+back-tracking...
+trying Q23=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=F Q13=T Q23=T Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 132 out of 302
+back-tracking...
+trying Q62=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=F Q62=T Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 119 out of 302
+back-tracking...
+trying Q52=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=F Q42=T Q52=T Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 108 out of 302
+back-tracking...
+trying Q32=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 95 out of 302
+trying Q42=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 107 out of 302
+trying Q52=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 119 out of 302
+trying Q62=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 129 out of 302
+trying Q13=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 140 out of 302
+trying Q23=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 152 out of 302
+trying Q33=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 164 out of 302
+trying Q43=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 176 out of 302
+trying Q53=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 184 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 191 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 185 out of 302
+back-tracking...
+trying Q53=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 178 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 186 out of 302
+trying Q14=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 196 out of 302
+trying Q24=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 205 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 216 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 225 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 233 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 239 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 234 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 226 out of 302
+back-tracking...
+trying Q44=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=T Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 218 out of 302
+back-tracking...
+trying Q34=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=T Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 206 out of 302
+back-tracking...
+trying Q24=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 198 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 210 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 220 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 229 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 236 out of 302
+trying Q15=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 244 out of 302
+trying Q25=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 253 out of 302
+trying Q35=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 262 out of 302
+trying Q45=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 267 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 272 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 276 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 273 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 268 out of 302
+back-tracking...
+trying Q45=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 264 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 270 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 275 out of 302
+trying Q16=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 281 out of 302
+back-tracking...
+trying Q16=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=T Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 277 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 270 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 264 out of 302
+back-tracking...
+trying Q35=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=T Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 254 out of 302
+back-tracking...
+trying Q25=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=T Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 245 out of 302
+back-tracking...
+trying Q15=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=T Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 238 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 229 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 220 out of 302
+back-tracking...
+trying Q44=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=T Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 211 out of 302
+back-tracking...
+trying Q34=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=T Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 198 out of 302
+back-tracking...
+trying Q14=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 188 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 178 out of 302
+back-tracking...
+trying Q43=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=T Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 166 out of 302
+back-tracking...
+trying Q33=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 153 out of 302
+back-tracking...
+trying Q23=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=T Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 142 out of 302
+back-tracking...
+trying Q13=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 131 out of 302
+trying Q23=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 144 out of 302
+trying Q33=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 157 out of 302
+trying Q43=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 170 out of 302
+trying Q53=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 179 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 187 out of 302
+trying Q14=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 198 out of 302
+trying Q24=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 208 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 219 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 227 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 234 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 239 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 235 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 229 out of 302
+back-tracking...
+trying Q44=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 221 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 229 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 235 out of 302
+trying Q15=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 243 out of 302
+trying Q25=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 251 out of 302
+trying Q35=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 260 out of 302
+trying Q45=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 266 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 271 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 275 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 272 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 268 out of 302
+back-tracking...
+trying Q45=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 261 out of 302
+back-tracking...
+trying Q35=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=T Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 252 out of 302
+back-tracking...
+trying Q25=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 245 out of 302
+back-tracking...
+trying Q15=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=T Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 236 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 229 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 222 out of 302
+back-tracking...
+trying Q34=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=T Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 209 out of 302
+back-tracking...
+trying Q24=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=T Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 200 out of 302
+back-tracking...
+trying Q14=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=T Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 188 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 179 out of 302
+back-tracking...
+trying Q53=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=T Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 171 out of 302
+back-tracking...
+trying Q43=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=T Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 158 out of 302
+back-tracking...
+trying Q33=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=T Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 144 out of 302
+back-tracking...
+trying Q23=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=T Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 132 out of 302
+back-tracking...
+trying Q62=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=F Q62=T Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 119 out of 302
+back-tracking...
+trying Q52=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=F Q52=T Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 108 out of 302
+back-tracking...
+trying Q42=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=F Q32=T Q42=T Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 96 out of 302
+back-tracking...
+trying Q22=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 82 out of 302
+trying Q32=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 95 out of 302
+trying Q42=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 107 out of 302
+trying Q52=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 119 out of 302
+trying Q62=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 129 out of 302
+trying Q13=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 141 out of 302
+trying Q23=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 153 out of 302
+trying Q33=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 165 out of 302
+trying Q43=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 176 out of 302
+trying Q53=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 184 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 191 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 185 out of 302
+back-tracking...
+trying Q53=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 178 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 186 out of 302
+trying Q14=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 195 out of 302
+trying Q24=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 205 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 215 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 225 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 232 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 238 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 233 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 226 out of 302
+back-tracking...
+trying Q44=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=T Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 217 out of 302
+back-tracking...
+trying Q34=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=T Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 207 out of 302
+back-tracking...
+trying Q24=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 196 out of 302
+back-tracking...
+trying Q14=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 188 out of 302
+trying Q24=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 199 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 210 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 221 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 229 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 236 out of 302
+trying Q15=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 244 out of 302
+trying Q25=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 254 out of 302
+trying Q35=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 261 out of 302
+trying Q45=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 266 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 272 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 275 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 273 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 267 out of 302
+back-tracking...
+trying Q45=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 263 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 270 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 274 out of 302
+trying Q16=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 281 out of 302
+trying Q26=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=F Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 287 out of 302
+trying Q36=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=F Q36=F Q46=? Q56=? Q66=? 
+num clauses satisfied: 292 out of 302
+back-tracking...
+trying Q36=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=F Q36=T Q46=? Q56=? Q66=? 
+num clauses satisfied: 289 out of 302
+back-tracking...
+trying Q26=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=T Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 282 out of 302
+back-tracking...
+trying Q16=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=T Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 275 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 270 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 263 out of 302
+back-tracking...
+trying Q35=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=T Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 256 out of 302
+back-tracking...
+trying Q25=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=F Q25=T Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 245 out of 302
+back-tracking...
+trying Q15=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=F Q15=T Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 237 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 229 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=F Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 221 out of 302
+back-tracking...
+trying Q44=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=F Q44=T Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 211 out of 302
+back-tracking...
+trying Q34=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=F Q34=T Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 200 out of 302
+back-tracking...
+trying Q24=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=T Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 188 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 178 out of 302
+back-tracking...
+trying Q43=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=T Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 167 out of 302
+back-tracking...
+trying Q33=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 155 out of 302
+back-tracking...
+trying Q23=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=F Q23=T Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 142 out of 302
+back-tracking...
+trying Q13=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=F Q13=T Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 131 out of 302
+back-tracking...
+trying Q62=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=F Q62=T Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 119 out of 302
+back-tracking...
+trying Q52=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=F Q52=T Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 108 out of 302
+back-tracking...
+trying Q42=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=F Q42=T Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 96 out of 302
+back-tracking...
+trying Q32=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=F Q22=T Q32=T Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 83 out of 302
+back-tracking...
+trying Q12=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 69 out of 302
+trying Q22=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 83 out of 302
+trying Q32=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 96 out of 302
+trying Q42=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 108 out of 302
+trying Q52=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 120 out of 302
+trying Q62=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 130 out of 302
+trying Q13=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 142 out of 302
+trying Q23=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 154 out of 302
+trying Q33=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 165 out of 302
+trying Q43=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 176 out of 302
+trying Q53=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 184 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 191 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 185 out of 302
+back-tracking...
+trying Q53=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 178 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 186 out of 302
+trying Q14=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 196 out of 302
+trying Q24=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 205 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 216 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 225 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 232 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 238 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 233 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 226 out of 302
+back-tracking...
+trying Q44=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=F Q44=T Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 218 out of 302
+back-tracking...
+trying Q34=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=F Q34=T Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 207 out of 302
+back-tracking...
+trying Q24=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 198 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 210 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 220 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 228 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 235 out of 302
+trying Q15=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 244 out of 302
+trying Q25=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 253 out of 302
+trying Q35=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 261 out of 302
+trying Q45=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 267 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 272 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 275 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 273 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 268 out of 302
+back-tracking...
+trying Q45=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 263 out of 302
+back-tracking...
+trying Q35=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=F Q35=T Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 255 out of 302
+back-tracking...
+trying Q25=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=F Q25=T Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 245 out of 302
+back-tracking...
+trying Q15=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=F Q15=T Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 236 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 228 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=F Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 220 out of 302
+back-tracking...
+trying Q44=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=F Q44=T Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 211 out of 302
+back-tracking...
+trying Q34=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=F Q24=T Q34=T Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 199 out of 302
+back-tracking...
+trying Q14=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=F Q14=T Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 187 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 178 out of 302
+back-tracking...
+trying Q43=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=T Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 167 out of 302
+back-tracking...
+trying Q33=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 156 out of 302
+trying Q43=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 168 out of 302
+trying Q53=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 177 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 185 out of 302
+trying Q14=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 195 out of 302
+trying Q24=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 205 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 217 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 226 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 232 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 237 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 233 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 228 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 234 out of 302
+trying Q15=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 243 out of 302
+trying Q25=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 251 out of 302
+trying Q35=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 258 out of 302
+trying Q45=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 265 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 271 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 275 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 272 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=F Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 266 out of 302
+back-tracking...
+trying Q45=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=F Q45=T Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 260 out of 302
+back-tracking...
+trying Q35=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=F Q35=T Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 252 out of 302
+back-tracking...
+trying Q25=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=F Q25=T Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 245 out of 302
+back-tracking...
+trying Q15=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=F Q15=T Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 235 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=T Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 228 out of 302
+back-tracking...
+trying Q44=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=T Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 219 out of 302
+back-tracking...
+trying Q34=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=F Q34=T Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 206 out of 302
+back-tracking...
+trying Q24=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=F Q24=T Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 197 out of 302
+back-tracking...
+trying Q14=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=F Q14=T Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 186 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=F Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 177 out of 302
+back-tracking...
+trying Q53=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=F Q53=T Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 169 out of 302
+back-tracking...
+trying Q43=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=T Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 157 out of 302
+back-tracking...
+trying Q23=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=F Q23=T Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 144 out of 302
+back-tracking...
+trying Q13=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=F Q13=T Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 131 out of 302
+back-tracking...
+trying Q62=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=F Q62=T Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 120 out of 302
+back-tracking...
+trying Q52=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=F Q52=T Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 109 out of 302
+back-tracking...
+trying Q42=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=F Q42=T Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 97 out of 302
+back-tracking...
+trying Q32=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=F Q32=T Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 84 out of 302
+back-tracking...
+trying Q22=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=F Q61=T Q12=T Q22=T Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 70 out of 302
+back-tracking...
+trying Q51=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=? Q12=? Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 56 out of 302
+trying Q61=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=? Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 67 out of 302
+trying Q12=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=? Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 80 out of 302
+trying Q22=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=? Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 93 out of 302
+trying Q32=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=F Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 105 out of 302
+trying Q42=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=F Q42=F Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 117 out of 302
+trying Q52=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=F Q42=F Q52=F Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 128 out of 302
+trying Q62=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=F Q42=F Q52=F Q62=F Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 137 out of 302
+back-tracking...
+trying Q62=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=F Q42=F Q52=F Q62=T Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 130 out of 302
+back-tracking...
+trying Q52=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=F Q42=F Q52=T Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 118 out of 302
+back-tracking...
+trying Q42=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=F Q42=T Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 107 out of 302
+back-tracking...
+trying Q32=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=? Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 95 out of 302
+trying Q42=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=? Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 108 out of 302
+trying Q52=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=? Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 120 out of 302
+trying Q62=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=? Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 130 out of 302
+trying Q13=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 141 out of 302
+trying Q23=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 153 out of 302
+trying Q33=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 166 out of 302
+trying Q43=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 177 out of 302
+trying Q53=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 186 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 192 out of 302
+back-tracking...
+trying Q63=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 188 out of 302
+trying Q14=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 198 out of 302
+trying Q24=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 208 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 218 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 226 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 235 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 240 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 236 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=F Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 227 out of 302
+back-tracking...
+trying Q44=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 220 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 230 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 236 out of 302
+trying Q15=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 244 out of 302
+trying Q25=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 251 out of 302
+trying Q35=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 259 out of 302
+trying Q45=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 266 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 272 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 276 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 273 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=F Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 267 out of 302
+back-tracking...
+trying Q45=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=F Q45=T Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 260 out of 302
+back-tracking...
+trying Q35=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=F Q35=T Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 252 out of 302
+back-tracking...
+trying Q25=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 246 out of 302
+trying Q35=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=F Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 255 out of 302
+trying Q45=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=F Q45=F Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 263 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=F Q45=F Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 270 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=F Q45=F Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 275 out of 302
+trying Q16=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=F Q45=F Q55=F Q65=F Q16=F Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 281 out of 302
+back-tracking...
+trying Q16=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=F Q45=F Q55=F Q65=F Q16=T Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 277 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=F Q45=F Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 270 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=F Q45=F Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 263 out of 302
+back-tracking...
+trying Q45=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=F Q45=T Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 255 out of 302
+back-tracking...
+trying Q35=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=F Q25=T Q35=T Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 246 out of 302
+back-tracking...
+trying Q15=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=F Q15=T Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 238 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 230 out of 302
+back-tracking...
+trying Q54=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=F Q44=T Q54=T Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 220 out of 302
+back-tracking...
+trying Q34=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=F Q34=T Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 209 out of 302
+back-tracking...
+trying Q24=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=F Q24=T Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 200 out of 302
+back-tracking...
+trying Q14=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=F Q63=T Q14=T Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 190 out of 302
+back-tracking...
+trying Q53=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=F Q53=T Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 178 out of 302
+back-tracking...
+trying Q43=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=F Q43=T Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 168 out of 302
+back-tracking...
+trying Q33=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=F Q33=T Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 154 out of 302
+back-tracking...
+trying Q23=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=F Q23=T Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 143 out of 302
+back-tracking...
+trying Q13=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=? Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 132 out of 302
+trying Q23=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=? Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 145 out of 302
+trying Q33=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=? Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 159 out of 302
+trying Q43=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=? Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 171 out of 302
+trying Q53=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=? Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 181 out of 302
+trying Q63=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=? Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 188 out of 302
+trying Q14=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=? Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 199 out of 302
+trying Q24=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=? Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 210 out of 302
+trying Q34=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=? Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 220 out of 302
+trying Q44=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=? Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 228 out of 302
+trying Q54=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=? Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 236 out of 302
+trying Q64=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=F Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 240 out of 302
+back-tracking...
+trying Q64=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=? Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 238 out of 302
+trying Q15=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=? Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 247 out of 302
+trying Q25=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=? Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 254 out of 302
+trying Q35=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=? Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 262 out of 302
+trying Q45=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=F Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 267 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=F Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 273 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=F Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 277 out of 302
+back-tracking...
+trying Q65=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=F Q55=F Q65=T Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 274 out of 302
+back-tracking...
+trying Q55=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=F Q55=T Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 268 out of 302
+back-tracking...
+trying Q45=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=T Q55=? Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 264 out of 302
+trying Q55=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=T Q55=F Q65=? Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 271 out of 302
+trying Q65=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=? Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 276 out of 302
+trying Q16=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=? Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 282 out of 302
+trying Q26=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=F Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 286 out of 302
+back-tracking...
+trying Q26=1
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=T Q36=? Q46=? Q56=? Q66=? 
+num clauses satisfied: 284 out of 302
+trying Q36=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=T Q36=F Q46=? Q56=? Q66=? 
+num clauses satisfied: 290 out of 302
+trying Q46=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=T Q36=F Q46=F Q56=? Q66=? 
+num clauses satisfied: 296 out of 302
+trying Q56=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=T Q36=F Q46=F Q56=F Q66=? 
+num clauses satisfied: 300 out of 302
+trying Q66=0
+
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=T Q36=F Q46=F Q56=F Q66=F 
+num clauses satisfied: 302 out of 302
+
+success!
+number of DPLL calls = 459(WITHOUT unit-clause heuristic)
+here is a model: 
+Q11=F Q21=F Q31=F Q41=F Q51=T Q61=F Q12=F Q22=F Q32=T Q42=F Q52=F Q62=F Q13=T Q23=F Q33=F Q43=F Q53=F Q63=F Q14=F Q24=F Q34=F Q44=F Q54=F Q64=T Q15=F Q25=F Q35=F Q45=T Q55=F Q65=F Q16=F Q26=T Q36=F Q46=F Q56=F Q66=F 
