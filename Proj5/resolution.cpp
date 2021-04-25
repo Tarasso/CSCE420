@@ -16,18 +16,6 @@ public:
 	ResPair(int a, int b) {i=a; j=b;}
 };
 
-/*
-	This is a propositional Rule of Inference (like in Project 3),
-	which should be able to handle clauses with an arbitrary number of
-	literals. Cancel out instances of “Prop” or “(not Prop)”, collect
-	the remaining literals between the two clauses, and make a new clause
-	out of them (an Expr* starting with ‘or’). You should also do ‘factoring’
-	by removing repeated literals from the resolvent (as described in the book).
-*/
-Expr* resolve(Expr* clause1, Expr* clause2, string Prop) {
-	
-	return nullptr;
-}
 
 void getVars(Expr* ex, vector<string>* vars, vector<string>* negVars) {
 	vector<Expr*> temp = ex->sub;
@@ -40,6 +28,62 @@ void getVars(Expr* ex, vector<string>* vars, vector<string>* negVars) {
 			negVars->push_back(temp[i]->sub[1]->toString());
 		}
 	}
+}
+
+/*
+	You should also do ‘factoring’
+	by removing repeated literals from the resolvent (as described in the book).
+*/
+Expr* resolve(Expr* clause1, Expr* clause2, string Prop) {
+	bool posPropInClause1 = false;
+	Expr* resolvent = parse("(or )");
+	vector<string>* clause1Vars = new vector<string>();
+	vector<string>* clause1negVars = new vector<string>();
+	vector<string>* clause2Vars = new vector<string>();
+	vector<string>* clause2negVars = new vector<string>();
+
+	getVars(clause1, clause1Vars, clause1negVars);
+	getVars(clause2, clause2Vars, clause2negVars);
+
+	for(string s : *clause1Vars) {
+		if(s == Prop) { 
+			posPropInClause1 = true;
+		}
+	}
+
+	// pos prop in clause 1, neg prop in clause 2
+	if(posPropInClause1) {
+		for(unsigned int i = 0; i < clause1->sub.size(); i++) {
+			if(clause1->sub[i]->sym != Prop && clause1->sub[i]->sym != "or") {
+				resolvent->sub.push_back(clause1->sub[i]);
+			}
+		}
+		for(unsigned int i = 0; i < clause2->sub.size(); i++) {
+			if(clause2->sub[i]->kind == ATOM && clause2->sub[i]->sym == "or")
+				continue;
+			if(clause2->sub[i]->kind == ATOM || clause2->sub[i]->sub[1]->sym != Prop) {
+				resolvent->sub.push_back(clause2->sub[i]);
+			}
+		}
+	}
+	else { // neg prop in clause 1, pos prop in clause 2
+		for(unsigned int i = 0; i < clause1->sub.size(); i++) {
+			if(clause1->sub[i]->kind == ATOM && clause1->sub[i]->sym == "or")
+				continue;
+			if(clause1->sub[i]->kind == ATOM || clause1->sub[i]->sub[1]->sym != Prop) {
+				resolvent->sub.push_back(clause1->sub[i]);
+			}
+		}
+		for(unsigned int i = 0; i < clause2->sub.size(); i++) {
+			if(clause2->sub[i]->sym != Prop && clause2->sub[i]->sym != "or") {
+				resolvent->sub.push_back(clause2->sub[i]);
+			}
+		}
+	}
+
+	// TODO: factoring
+
+	return resolvent;
 }
 
 
@@ -133,8 +177,8 @@ bool resolution(vector<Expr*> KB, Expr* negatedQuery, string origQuery) {
 	exit(1);
 
 	queue<ResPair> Q;
-	for(int i = 0; i < KB.size(); i++) {
-		for(int j = i + 1; j < KB.size(); j++) {
+	for(unsigned int i = 0; i < KB.size(); i++) {
+		for(unsigned int j = i + 1; j < KB.size(); j++) {
 			if(resolvable(KB[i],KB[j])) {
 				ResPair temp(i,j);
 				Q.push(temp);
@@ -167,7 +211,7 @@ bool resolution(vector<Expr*> KB, Expr* negatedQuery, string origQuery) {
 			if(validateClause(resolvent) == false || contains(KB, resolvent)) {
 				continue;
 			}
-			for(int i = 0; i < KB.size(); i++) {
+			for(unsigned int i = 0; i < KB.size(); i++) {
 				if(resolvable(KB[i],resolvent)) {
 					ResPair temp(i,KB.size()); // KB.size() SHOULD represent the clause number of the resolvent that is about to get pushed to KB
 					Q.push(temp);
@@ -212,11 +256,16 @@ int main(int argc, char* argv[]) {
 			exit(1);
 		}
 
+		// Expr* test1 = parse("(or A (not B) C)");
+		// Expr* test2 = parse("(or (not A) D)");
+
+		// resolve(test1, test2, "A");
+		// resolve(test2, test1, "A");
 		bool result = resolution(KB,negatedQuery,argv[2]);
 		if(!result) {
 			cout << "failure" << endl;
 		}
-		
+
 	}
 	catch(const std::exception& e)
 	{
