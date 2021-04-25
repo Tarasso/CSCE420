@@ -30,10 +30,7 @@ void getVars(Expr* ex, vector<string>* vars, vector<string>* negVars) {
 	}
 }
 
-/*
-	You should also do ‘factoring’
-	by removing repeated literals from the resolvent (as described in the book).
-*/
+
 Expr* resolve(Expr* clause1, Expr* clause2, string Prop) {
 	bool posPropInClause1 = false;
 	Expr* resolvent = parse("(or )");
@@ -81,7 +78,16 @@ Expr* resolve(Expr* clause1, Expr* clause2, string Prop) {
 		}
 	}
 
-	// TODO: factoring
+	// factoring
+	for(int i = resolvent->sub.size() - 1; i >= 0; i--) {
+		for(int j = i - 1; j >= 0; j--) {
+			if(Eq(resolvent->sub[i],resolvent->sub[j])) {
+				cout << "found duplicate: " << resolvent->sub[i]->toString() << " , " << resolvent->sub[j]->toString() << endl;
+				resolvent->sub.erase(resolvent->sub.begin() + j);
+				cout << "erased dup" << endl;
+			}
+		}
+	}
 
 	return resolvent;
 }
@@ -173,9 +179,6 @@ bool resolution(vector<Expr*> KB, Expr* negatedQuery, string origQuery) {
 			exit(-1);
 		}
 	}
-	cout << "got here :)" << endl;
-	exit(1);
-
 	queue<ResPair> Q;
 	for(unsigned int i = 0; i < KB.size(); i++) {
 		for(unsigned int j = i + 1; j < KB.size(); j++) {
@@ -256,8 +259,8 @@ int main(int argc, char* argv[]) {
 			exit(1);
 		}
 
-		// Expr* test1 = parse("(or A (not B) C)");
-		// Expr* test2 = parse("(or (not A) D)");
+		// Expr* test1 = parse("(or A (not B) E C D)");
+		// Expr* test2 = parse("(or E (not A) D)");
 
 		// resolve(test1, test2, "A");
 		// resolve(test2, test1, "A");
