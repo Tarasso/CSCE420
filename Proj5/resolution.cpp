@@ -82,9 +82,9 @@ Expr* resolve(Expr* clause1, Expr* clause2, string Prop) {
 	for(int i = resolvent->sub.size() - 1; i >= 0; i--) {
 		for(int j = i - 1; j >= 0; j--) {
 			if(Eq(resolvent->sub[i],resolvent->sub[j])) {
-				cout << "found duplicate: " << resolvent->sub[i]->toString() << " , " << resolvent->sub[j]->toString() << endl;
+				// cout << "found duplicate: " << resolvent->sub[i]->toString() << " , " << resolvent->sub[j]->toString() << endl;
 				resolvent->sub.erase(resolvent->sub.begin() + j);
-				cout << "erased dup" << endl;
+				// cout << "erased dup" << endl;
 			}
 		}
 	}
@@ -221,7 +221,7 @@ bool resolution(vector<Expr*> KB, Expr* negatedQuery, string origQuery) {
 				}
 			}
 			KB.push_back(resolvent);
-			cout << KB.size() - 1 << ". " << KB[KB.size() - 1]->toString() << endl;
+			cout << KB.size() - 1 << ". " << KB[KB.size() - 1]->toString() << endl << endl;
 		}
 
 	}
