@@ -12,8 +12,8 @@ using namespace std;
 
 class ResPair {
 public:
-	int i, j;
-	ResPair(int a, int b) {i=a; j=b;}
+	int i, j, score;
+	ResPair(int a, int b, int s) {i=a; j=b; score=s;}
 };
 
 
@@ -169,6 +169,18 @@ bool contains(vector<Expr*> KB, Expr* clause) {
 	return false;
 }
 
+struct CompareResPair
+{
+    bool operator()(const ResPair lhs, const ResPair rhs) const
+    {
+        return lhs.score > rhs.score;
+    }
+};
+
+int calcMinLen(Expr* clause1, Expr* clause2) {
+	return clause1->sub.size() + clause2->sub.size() - 1;
+}
+
 bool resolution(vector<Expr*> KB, Expr* negatedQuery, string origQuery) {
 	KB.push_back(negatedQuery);
 	show_kb(KB);
@@ -179,11 +191,11 @@ bool resolution(vector<Expr*> KB, Expr* negatedQuery, string origQuery) {
 			exit(-1);
 		}
 	}
-	queue<ResPair> Q;
+	priority_queue<ResPair, vector<ResPair>, CompareResPair> Q;
 	for(unsigned int i = 0; i < KB.size(); i++) {
 		for(unsigned int j = i + 1; j < KB.size(); j++) {
 			if(resolvable(KB[i],KB[j])) {
-				ResPair temp(i,j);
+				ResPair temp(i,j, calcMinLen(KB[i],KB[j]));
 				Q.push(temp);
 			}
 			// vector<string> matching = matching_propositions(KB[i],KB[j]);
@@ -199,7 +211,7 @@ bool resolution(vector<Expr*> KB, Expr* negatedQuery, string origQuery) {
 	int iter = -1;
 	while(!Q.empty() && iter++ < MAX_ITERS) {
 		cout << "iteration=" << iter << ", clauses=" << KB.size() << endl;
-		ResPair curr = Q.front();
+		ResPair curr = Q.top();
 		Q.pop();
 		vector<string> props = matching_propositions(KB[curr.i],KB[curr.j]);
 		for(string P : props) {
@@ -207,16 +219,17 @@ bool resolution(vector<Expr*> KB, Expr* negatedQuery, string origQuery) {
 			cout << KB[curr.i]->toString() << " , " << KB[curr.j]->toString() << endl;
 			Expr* resolvent = resolve(KB[curr.i],KB[curr.j],P);
 			cout << "resolvent = " << resolvent->toString() << endl;
-			if(resolvent->toString() == "(or )") {
+			if(resolvent->toString() == "(or)") {
 				cout << "success! derived empty clause, so " << origQuery << " is entailed" << endl; 
 				return true;
 			}
 			if(validateClause(resolvent) == false || contains(KB, resolvent)) {
+				cout << endl;
 				continue;
 			}
 			for(unsigned int i = 0; i < KB.size(); i++) {
 				if(resolvable(KB[i],resolvent)) {
-					ResPair temp(i,KB.size()); // KB.size() SHOULD represent the clause number of the resolvent that is about to get pushed to KB
+					ResPair temp(i,KB.size(),calcMinLen(KB[i],resolvent)); // KB.size() SHOULD represent the clause number of the resolvent that is about to get pushed to KB
 					Q.push(temp);
 				}
 			}

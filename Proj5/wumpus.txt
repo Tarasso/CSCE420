@@ -1,0 +1,29 @@
+# rooms adj to wumpus have stench
+W11 -> S12 ^ S21 ==== !W11 v S12, !W11 v S21
+
+# rooms adj to pit have breeze
+P11 -> B12 ^ B21 ==== !P11 v B12, !P11 v B21
+
+# no breeze means adj rooms dont have pit
+!B11 -> !P12 ^ !P21 ==== B11 v !P12, B11 v !P21
+
+# no stench means adj rooms dont have wumpus
+!S11 -> !W12 ^ !W21 ==== S11 v !W12, S11 v !W21
+
+
+
+!!!# there is only one wumpus!!!
+W11 -> !W12 ==== !W11 v !W12
+
+
+# no wumpus and no pit in visited rooms
+done
+
+# safe if no wumpus and no pit
+!W11 ^ !P11 -> SAFE11 ==== W11 v SAFE, P v SAFE
+
+
+# initial facts
+B = [24,13,22,42] rest IN V are !B
+S = [34,32] rest IN V are !S
+V = [44,34,24,14,13,12,22,32,42]
