@@ -29,29 +29,29 @@ for i in range(1,x+1):
         if(j+1 <= y):
             file.write("(or (not P" + str(i) + str(j) + ") B" + str(i) + str(j+1) + ")\n")
 
-file.write("# no breeze means adj rooms dont have pit\n")
-for i in range(1,x+1):
-    for j in range(1,y+1):
-        if(i-1 >= 1):
-            file.write("(or B" + str(i) + str(j) + " (not P" + str(i-1) + str(j) + "))\n")
-        if(i+1 <= x):
-            file.write("(or B" + str(i) + str(j) + " (not P" + str(i+1) + str(j) + "))\n")
-        if(j-1 >= 1):
-            file.write("(or B" + str(i) + str(j) + " (not P" + str(i) + str(j-1) + "))\n")
-        if(j+1 <= y):
-            file.write("(or B" + str(i) + str(j) + " (not P" + str(i) + str(j+1) + "))\n")
+# file.write("# no breeze means adj rooms dont have pit\n")
+# for i in range(1,x+1):
+#     for j in range(1,y+1):
+#         if(i-1 >= 1):
+#             file.write("(or B" + str(i) + str(j) + " (not P" + str(i-1) + str(j) + "))\n")
+#         if(i+1 <= x):
+#             file.write("(or B" + str(i) + str(j) + " (not P" + str(i+1) + str(j) + "))\n")
+#         if(j-1 >= 1):
+#             file.write("(or B" + str(i) + str(j) + " (not P" + str(i) + str(j-1) + "))\n")
+#         if(j+1 <= y):
+#             file.write("(or B" + str(i) + str(j) + " (not P" + str(i) + str(j+1) + "))\n")
 
-file.write("# no stench means adj rooms dont have wumpus\n")
-for i in range(1,x+1):
-    for j in range(1,y+1):
-        if(i-1 >= 1):
-            file.write("(or S" + str(i) + str(j) + " (not W" + str(i-1) + str(j) + "))\n")
-        if(i+1 <= x):
-            file.write("(or S" + str(i) + str(j) + " (not W" + str(i+1) + str(j) + "))\n")
-        if(j-1 >= 1):
-            file.write("(or S" + str(i) + str(j) + " (not W" + str(i) + str(j-1) + "))\n")
-        if(j+1 <= y):
-            file.write("(or S" + str(i) + str(j) + " (not W" + str(i) + str(j+1) + "))\n")
+# file.write("# no stench means adj rooms dont have wumpus\n")
+# for i in range(1,x+1):
+#     for j in range(1,y+1):
+#         if(i-1 >= 1):
+#             file.write("(or S" + str(i) + str(j) + " (not W" + str(i-1) + str(j) + "))\n")
+#         if(i+1 <= x):
+#             file.write("(or S" + str(i) + str(j) + " (not W" + str(i+1) + str(j) + "))\n")
+#         if(j-1 >= 1):
+#             file.write("(or S" + str(i) + str(j) + " (not W" + str(i) + str(j-1) + "))\n")
+#         if(j+1 <= y):
+#             file.write("(or S" + str(i) + str(j) + " (not W" + str(i) + str(j+1) + "))\n")
 
 
 file.write("# safe if and only if no wumpus and no pit\n")
