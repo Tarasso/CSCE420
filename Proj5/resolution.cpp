@@ -178,17 +178,7 @@ struct CompareResPair
 };
 
 int calcMinLen(Expr* clause1, Expr* clause2) {
-	// vector<string>* clause1Vars = new vector<string>();
-	// vector<string>* clause1negVars = new vector<string>();
-	// vector<string>* clause2Vars = new vector<string>();
-	// vector<string>* clause2negVars = new vector<string>();
-
-	// getVars(clause1, clause1Vars, clause1negVars);
-	// getVars(clause2, clause2Vars, clause2negVars);
-
-	// return clause1Vars->size() + clause1negVars->size() + clause2Vars->size() + clause2negVars->size() - 2;
-
-	return clause1->sub.size() + clause2->sub.size() - 1;
+	return min(clause1->sub.size(), clause2->sub.size());
 }
 
 bool resolution(vector<Expr*> KB, Expr* negatedQuery, string origQuery) {
@@ -208,14 +198,6 @@ bool resolution(vector<Expr*> KB, Expr* negatedQuery, string origQuery) {
 				ResPair temp(i,j, calcMinLen(KB[i],KB[j]));
 				Q.push(temp);
 			}
-			// vector<string> matching = matching_propositions(KB[i],KB[j]);
-			// if(matching.empty())
-			// 	continue;
-			// cout << "matching between " << i << " " << j << ": ";
-			// for(string s : matching) {
-			// 	cout << s << " ";
-			// }
-			// cout << endl;
 		}
 	}
 	int iter = -1;
@@ -239,7 +221,7 @@ bool resolution(vector<Expr*> KB, Expr* negatedQuery, string origQuery) {
 			}
 			for(unsigned int i = 0; i < KB.size(); i++) {
 				if(resolvable(KB[i],resolvent)) {
-					ResPair temp(i,KB.size(),calcMinLen(KB[i],resolvent)); // KB.size() SHOULD represent the clause number of the resolvent that is about to get pushed to KB
+					ResPair temp(i,KB.size(),calcMinLen(KB[i],resolvent));
 					Q.push(temp);
 				}
 			}
@@ -281,17 +263,10 @@ int main(int argc, char* argv[]) {
 			cout << "Error in adding negated error" << endl;
 			exit(1);
 		}
-
-		// Expr* test1 = parse("(or A (not B) E C D)");
-		// Expr* test2 = parse("(or E (not A) D)");
-
-		// resolve(test1, test2, "A");
-		// resolve(test2, test1, "A");
 		bool result = resolution(KB,negatedQuery,argv[2]);
 		if(!result) {
 			cout << "failure" << endl;
 		}
-
 	}
 	catch(const std::exception& e)
 	{

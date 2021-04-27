@@ -29,6 +29,34 @@ for i in range(1,x+1):
         if(j+1 <= y):
             file.write("(or (not P" + str(i) + str(j) + ") B" + str(i) + str(j+1) + ")\n")
 
+file.write("# if there IS a stench, then the wumpus might be in one of the adjacent rooms\n")
+for i in range(1,x+1):
+    for j in range(1,y+1):
+        file.write("(or (not S" + str(i) + str(j) + ")")
+        if(i-1 >= 1):
+            file.write(" W" + str(i-1) + str(j))
+        if(i+1 <= x):
+            file.write(" W" + str(i+1) + str(j))
+        if(j-1 >= 1):
+            file.write(" W" + str(i) + str(j-1))
+        if(j+1 <= y):
+            file.write(" W" + str(i) + str(j+1))
+        file.write(")\n")
+
+file.write("# if there IS a breeze, then a pit might be in one of the adjacent rooms\n")
+for i in range(1,x+1):
+    for j in range(1,y+1):
+        file.write("(or (not B" + str(i) + str(j) + ")")
+        if(i-1 >= 1):
+            file.write(" P" + str(i-1) + str(j))
+        if(i+1 <= x):
+            file.write(" P" + str(i+1) + str(j))
+        if(j-1 >= 1):
+            file.write(" P" + str(i) + str(j-1))
+        if(j+1 <= y):
+            file.write(" P" + str(i) + str(j+1))
+        file.write(")\n")
+
 # file.write("# no breeze means adj rooms dont have pit\n")
 # for i in range(1,x+1):
 #     for j in range(1,y+1):
@@ -64,12 +92,12 @@ for i in range(1,x+1):
 
 completed = []
 
-file.write("# at least 1 wumpus\n")
-file.write("(or")
-for i in range(1,x+1):
-    for j in range(1,y+1):
-        file.write(" W" + str(i) + str(j))
-file.write(")\n")
+# file.write("# at least 1 wumpus\n")
+# file.write("(or")
+# for i in range(1,x+1):
+#     for j in range(1,y+1):
+#         file.write(" W" + str(i) + str(j))
+# file.write(")\n")
 
 file.write("# at most 1 wumpus\n")
 for i in range(1,x+1):
