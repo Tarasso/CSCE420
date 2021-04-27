@@ -178,6 +178,16 @@ struct CompareResPair
 };
 
 int calcMinLen(Expr* clause1, Expr* clause2) {
+	// vector<string>* clause1Vars = new vector<string>();
+	// vector<string>* clause1negVars = new vector<string>();
+	// vector<string>* clause2Vars = new vector<string>();
+	// vector<string>* clause2negVars = new vector<string>();
+
+	// getVars(clause1, clause1Vars, clause1negVars);
+	// getVars(clause2, clause2Vars, clause2negVars);
+
+	// return clause1Vars->size() + clause1negVars->size() + clause2Vars->size() + clause2negVars->size() - 2;
+
 	return clause1->sub.size() + clause2->sub.size() - 1;
 }
 

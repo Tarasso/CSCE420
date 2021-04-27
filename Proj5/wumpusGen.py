@@ -54,21 +54,24 @@ for i in range(1,x+1):
             file.write("(or S" + str(i) + str(j) + " (not W" + str(i) + str(j+1) + "))\n")
 
 
-file.write("# safe if no wumpus and no pit\n")
+file.write("# safe if and only if no wumpus and no pit\n")
 for i in range(1,x+1):
     for j in range(1,y+1):
         room = str(i) + str(j)
         file.write("(or W" + room + " P" + room + " SAFE" + room + ")\n")
+        file.write("(or (not SAFE" + room + ") (not W" + room + "))\n")
+        file.write("(or (not SAFE" + room + ") (not P" + room + "))\n")
 
 completed = []
 
-file.write("# only 1 wumpus\n")
+file.write("# at least 1 wumpus\n")
 file.write("(or")
 for i in range(1,x+1):
     for j in range(1,y+1):
         file.write(" W" + str(i) + str(j))
 file.write(")\n")
 
+file.write("# at most 1 wumpus\n")
 for i in range(1,x+1):
     for j in range(1,y+1):
         for i2 in range(1,x+1):
@@ -92,6 +95,7 @@ S = ['34','32']
 for room in V:
     file.write("(or (not W" + room +"))\n")
     file.write("(or (not P" + room +"))\n")
+    # file.write("(or SAFE" + room +")\n")
     if(room in B):
         file.write("(or B" + room + ")\n")
         file.write("(or (not S" + room + "))\n")

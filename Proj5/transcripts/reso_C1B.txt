@@ -1,0 +1,244 @@
+0. (or C1Y C1W C1B)
+1. (or C2Y C2B C2W)
+2. (or C3Y C3W C3B)
+3. (or (not L1Y) (not C1Y))
+4. (or (not L1W) (not C1W))
+5. (or (not L1B) (not C1B))
+6. (or (not L2Y) (not C2Y))
+7. (or (not L2W) (not C2W))
+8. (or (not L2B) (not C2B))
+9. (or (not L3Y) (not C3Y))
+10. (or (not L3W) (not C3W))
+11. (or (not L3B) (not C3B))
+12. (or (not C1Y) (not C1W))
+13. (or (not C1Y) (not C1B))
+14. (or (not C1W) (not C1Y))
+15. (or (not C1W) (not C1B))
+16. (or (not C1B) (not C1W))
+17. (or (not C1B) (not C1Y))
+18. (or (not C2Y) (not C2W))
+19. (or (not C2Y) (not C2B))
+20. (or (not C2W) (not C2Y))
+21. (or (not C2W) (not C2B))
+22. (or (not C2B) (not C2W))
+23. (or (not C2B) (not C2Y))
+24. (or (not C3Y) (not C3W))
+25. (or (not C3Y) (not C3B))
+26. (or (not C3W) (not C3Y))
+27. (or (not C3W) (not C3B))
+28. (or (not C3B) (not C3W))
+29. (or (not C3B) (not C3Y))
+30. (or (not C1Y) (not C2Y))
+31. (or (not C1Y) (not C3Y))
+32. (or (not C1W) (not C2W))
+33. (or (not C1W) (not C3W))
+34. (or (not C1B) (not C2B))
+35. (or (not C1B) (not C3B))
+36. (or (not C2Y) (not C1Y))
+37. (or (not C2Y) (not C3Y))
+38. (or (not C2W) (not C1W))
+39. (or (not C2W) (not C3W))
+40. (or (not C2B) (not C1B))
+41. (or (not C2B) (not C3B))
+42. (or (not C3Y) (not C2Y))
+43. (or (not C3Y) (not C1Y))
+44. (or (not C3W) (not C2W))
+45. (or (not C3W) (not C1W))
+46. (or (not C3B) (not C2B))
+47. (or (not C3B) (not C1B))
+48. (or (not O1Y) C1Y C1B)
+49. (or (not O1W) C1W C1B)
+50. (or (not O2Y) C2Y C2B)
+51. (or (not O2W) C2W C2B)
+52. (or (not O3Y) C3Y C3B)
+53. (or (not O3W) C3W C3B)
+54. (or O1Y)
+55. (or L1W)
+56. (or O2W)
+57. (or L2Y)
+58. (or O3Y)
+59. (or L3B)
+60. (or (not C1B))
+
+
+iteration=0, clauses=61
+resolving clauses 4 and 55: (or (not L1W) (not C1W)) , (or L1W)
+resolvent = (or (not C1W))
+61. (or (not C1W))
+
+iteration=1, clauses=62
+resolving clauses 6 and 57: (or (not L2Y) (not C2Y)) , (or L2Y)
+resolvent = (or (not C2Y))
+62. (or (not C2Y))
+
+iteration=2, clauses=63
+resolving clauses 11 and 59: (or (not L3B) (not C3B)) , (or L3B)
+resolvent = (or (not C3B))
+63. (or (not C3B))
+
+iteration=3, clauses=64
+resolving clauses 48 and 54: (or (not O1Y) C1Y C1B) , (or O1Y)
+resolvent = (or C1Y C1B)
+64. (or C1Y C1B)
+
+iteration=4, clauses=65
+resolving clauses 60 and 64: (or (not C1B)) , (or C1Y C1B)
+resolvent = (or C1Y)
+65. (or C1Y)
+
+iteration=5, clauses=66
+resolving clauses 3 and 65: (or (not L1Y) (not C1Y)) , (or C1Y)
+resolvent = (or (not L1Y))
+66. (or (not L1Y))
+
+iteration=6, clauses=67
+resolving clauses 17 and 65: (or (not C1B) (not C1Y)) , (or C1Y)
+resolvent = (or (not C1B))
+
+iteration=7, clauses=67
+resolving clauses 30 and 65: (or (not C1Y) (not C2Y)) , (or C1Y)
+resolvent = (or (not C2Y))
+
+iteration=8, clauses=67
+resolving clauses 31 and 65: (or (not C1Y) (not C3Y)) , (or C1Y)
+resolvent = (or (not C3Y))
+67. (or (not C3Y))
+
+iteration=9, clauses=68
+resolving clauses 36 and 65: (or (not C2Y) (not C1Y)) , (or C1Y)
+resolvent = (or (not C2Y))
+
+iteration=10, clauses=68
+resolving clauses 43 and 65: (or (not C3Y) (not C1Y)) , (or C1Y)
+resolvent = (or (not C3Y))
+
+iteration=11, clauses=68
+resolving clauses 12 and 65: (or (not C1Y) (not C1W)) , (or C1Y)
+resolvent = (or (not C1W))
+
+iteration=12, clauses=68
+resolving clauses 13 and 65: (or (not C1Y) (not C1B)) , (or C1Y)
+resolvent = (or (not C1B))
+
+iteration=13, clauses=68
+resolving clauses 14 and 65: (or (not C1W) (not C1Y)) , (or C1Y)
+resolvent = (or (not C1W))
+
+iteration=14, clauses=68
+resolving clauses 2 and 67: (or C3Y C3W C3B) , (or (not C3Y))
+resolvent = (or C3W C3B)
+68. (or C3W C3B)
+
+iteration=15, clauses=69
+resolving clauses 63 and 68: (or (not C3B)) , (or C3W C3B)
+resolvent = (or C3W)
+69. (or C3W)
+
+iteration=16, clauses=70
+resolving clauses 10 and 69: (or (not L3W) (not C3W)) , (or C3W)
+resolvent = (or (not L3W))
+70. (or (not L3W))
+
+iteration=17, clauses=71
+resolving clauses 24 and 69: (or (not C3Y) (not C3W)) , (or C3W)
+resolvent = (or (not C3Y))
+
+iteration=18, clauses=71
+resolving clauses 26 and 69: (or (not C3W) (not C3Y)) , (or C3W)
+resolvent = (or (not C3Y))
+
+iteration=19, clauses=71
+resolving clauses 27 and 69: (or (not C3W) (not C3B)) , (or C3W)
+resolvent = (or (not C3B))
+
+iteration=20, clauses=71
+resolving clauses 28 and 69: (or (not C3B) (not C3W)) , (or C3W)
+resolvent = (or (not C3B))
+
+iteration=21, clauses=71
+resolving clauses 44 and 69: (or (not C3W) (not C2W)) , (or C3W)
+resolvent = (or (not C2W))
+71. (or (not C2W))
+
+iteration=22, clauses=72
+resolving clauses 45 and 69: (or (not C3W) (not C1W)) , (or C3W)
+resolvent = (or (not C1W))
+
+iteration=23, clauses=72
+resolving clauses 33 and 69: (or (not C1W) (not C3W)) , (or C3W)
+resolvent = (or (not C1W))
+
+iteration=24, clauses=72
+resolving clauses 39 and 69: (or (not C2W) (not C3W)) , (or C3W)
+resolvent = (or (not C2W))
+
+iteration=25, clauses=72
+resolving clauses 1 and 71: (or C2Y C2B C2W) , (or (not C2W))
+resolvent = (or C2Y C2B)
+72. (or C2Y C2B)
+
+iteration=26, clauses=73
+resolving clauses 62 and 72: (or (not C2Y)) , (or C2Y C2B)
+resolvent = (or C2B)
+73. (or C2B)
+
+iteration=27, clauses=74
+resolving clauses 8 and 73: (or (not L2B) (not C2B)) , (or C2B)
+resolvent = (or (not L2B))
+74. (or (not L2B))
+
+iteration=28, clauses=75
+resolving clauses 19 and 73: (or (not C2Y) (not C2B)) , (or C2B)
+resolvent = (or (not C2Y))
+
+iteration=29, clauses=75
+resolving clauses 21 and 73: (or (not C2W) (not C2B)) , (or C2B)
+resolvent = (or (not C2W))
+
+iteration=30, clauses=75
+resolving clauses 22 and 73: (or (not C2B) (not C2W)) , (or C2B)
+resolvent = (or (not C2W))
+
+iteration=31, clauses=75
+resolving clauses 23 and 73: (or (not C2B) (not C2Y)) , (or C2B)
+resolvent = (or (not C2Y))
+
+iteration=32, clauses=75
+resolving clauses 40 and 73: (or (not C2B) (not C1B)) , (or C2B)
+resolvent = (or (not C1B))
+
+iteration=33, clauses=75
+resolving clauses 46 and 73: (or (not C3B) (not C2B)) , (or C2B)
+resolvent = (or (not C3B))
+
+iteration=34, clauses=75
+resolving clauses 41 and 73: (or (not C2B) (not C3B)) , (or C2B)
+resolvent = (or (not C3B))
+
+iteration=35, clauses=75
+resolving clauses 34 and 73: (or (not C1B) (not C2B)) , (or C2B)
+resolvent = (or (not C1B))
+
+iteration=36, clauses=75
+resolving clauses 51 and 71: (or (not O2W) C2W C2B) , (or (not C2W))
+resolvent = (or (not O2W) C2B)
+75. (or (not O2W) C2B)
+
+iteration=37, clauses=76
+resolving clauses 56 and 75: (or O2W) , (or (not O2W) C2B)
+resolvent = (or C2B)
+
+iteration=38, clauses=76
+resolving clauses 52 and 67: (or (not O3Y) C3Y C3B) , (or (not C3Y))
+resolvent = (or (not O3Y) C3B)
+76. (or (not O3Y) C3B)
+
+iteration=39, clauses=77
+resolving clauses 58 and 76: (or O3Y) , (or (not O3Y) C3B)
+resolvent = (or C3B)
+77. (or C3B)
+
+iteration=40, clauses=78
+resolving clauses 63 and 77: (or (not C3B)) , (or C3B)
+resolvent = (or)
+success! derived empty clause, so C1B is entailed

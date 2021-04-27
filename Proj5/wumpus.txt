@@ -19,8 +19,8 @@ W11 -> !W12 ==== !W11 v !W12
 # no wumpus and no pit in visited rooms
 done
 
-# safe if no wumpus and no pit
-!W11 ^ !P11 -> SAFE11 ==== W11 v SAFE, P v SAFE
+# safe if and only if no wumpus and no pit
+!W ^ !P <-> SAFE ==== W v P v SAFE, !SAFE v !W, !SAFE v !P
 
 
 # initial facts
